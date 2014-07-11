@@ -7,6 +7,12 @@ Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Aweso
 
 */
 
+.imageset.site_logo {
+	background: url("./images/bnet-default.png") no-repeat 50% 0;
+	width: 402px;
+	height: 92px;
+}
+
 /* Top-bar links
  * (example of how to apply custom icons to elements in the top-bar)
 --------------------------------------------- */

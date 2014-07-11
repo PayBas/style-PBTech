@@ -22,9 +22,6 @@ body {
 	margin: 10px 0;
 }
 .imageset.site_logo {
-	background: url("./images/bnet-default.png") no-repeat 50% 0;
-	width: 402px;
-	height: 92px;
 	background-size: 100% 100%;
 }
 
