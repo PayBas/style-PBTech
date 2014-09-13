@@ -37,25 +37,26 @@
 	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
 </div>
 
-<script type="text/javascript" src="{T_JQUERY_LINK}"></script>
-<!-- IF S_ALLOW_CDN --><script type="text/javascript">window.jQuery || document.write(unescape('%3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}" type="text/javascript"%3E%3C/script%3E'));</script><!-- ENDIF -->
-<script type="text/javascript" src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
+<script src="{T_JQUERY_LINK}"></script>
+<!-- IF S_ALLOW_CDN --><script>window.jQuery || document.write(unescape('%3Cscript src="{T_ASSETS_PATH}/javascript/jquery.min.js?assets_version={T_ASSETS_VERSION}" type="text/javascript"%3E%3C/script%3E'));</script><!-- ENDIF -->
+<script src="{T_ASSETS_PATH}/javascript/core.js?assets_version={T_ASSETS_VERSION}"></script>
 <!-- INCLUDEJS forum_fn.js -->
 <!-- INCLUDEJS ajax.js -->
 
 <!-- INCLUDEJS jquery.collapse.js -->
 <!-- INCLUDEJS jquery.collapse_storage.js -->
 
-<script type="text/javascript">
-$(document).ready(function($){
+<script>
+jQuery(function($) {
+	'use strict';
 
-	$(".stat-block.online-list").attr('id', 'online-list');
-	$(".stat-block.birthday-list").attr('id', 'birthday-list');
-	$(".stat-block.statistics").attr('id', 'statistics');
-	
-	$(".collapse-box > h2, .stat-block > h3").addClass("open").find('a').contents().unwrap();
+	$('.stat-block.online-list').attr('id', 'online-list');
+	$('.stat-block.birthday-list').attr('id', 'birthday-list');
+	$('.stat-block.statistics').attr('id', 'statistics');
 
-	$(".collapse-box, .stat-block").collapse({
+	$('.collapse-box > h2, .stat-block > h3').addClass("open").find('a').contents().unwrap();
+
+	$('.collapse-box, .stat-block').collapse({
 		persist: true,
 		open: function() {
 			this.stop(true,true);

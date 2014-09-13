@@ -18,7 +18,7 @@
 						<!-- IF S_USER_LOGGED_IN -->
 							<li class="small-icon icon-search-new"><a href="{U_SEARCH_NEW}" role="menuitem">{L_SEARCH_NEW}</a></li>
 						<!-- ENDIF -->
-						<!-- IF S_LOAD_UNREADS --> 
+						<!-- IF S_LOAD_UNREADS -->
 							<li class="small-icon icon-search-unread"><a href="{U_SEARCH_UNREAD}" role="menuitem">{L_SEARCH_UNREAD}</a></li>
 						<!-- ENDIF -->
 						<li class="small-icon icon-search-unanswered"><a href="{U_SEARCH_UNANSWERED}" role="menuitem">{L_SEARCH_UNANSWERED}</a></li>
@@ -38,12 +38,12 @@
 				</ul>
 			</div>
 		</li>
+		<!-- IF U_ACP --><li class="small-icon icon-acp" data-skip-responsive="true"><a href="{U_ACP}" title="{L_ACP}" role="menuitem">{L_ACP_SHORT}</a></li><!-- ENDIF -->
+		<!-- IF U_MCP --><li class="small-icon icon-mcp" data-last-responsive="true"><a href="{U_MCP}" title="{L_MCP}" role="menuitem">{L_MCP_SHORT}</a></li><!-- ENDIF -->
 
 		<!-- EVENT overall_header_navigation_prepend -->
-		<li class="small-icon icon-faq" <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}" role="menuitem">{L_FAQ}</a></li>
+		<li class="small-icon icon-faq" <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->><a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">{L_FAQ}</a></li>
 		<!-- EVENT overall_header_navigation_append -->
-		<!-- IF U_ACP --><li class="small-icon icon-acp" data-skip-responsive="true"><a href="{U_ACP}" title="{L_ACP}" role="menuitem">{L_ACP_SHORT}</a></li><!-- ENDIF -->
-		<!-- IF U_MCP --><li class="small-icon icon-mcp" data-skip-responsive="true"><a href="{U_MCP}" title="{L_MCP}" role="menuitem">{L_MCP_SHORT}</a></li><!-- ENDIF -->
 
 	<!-- IF S_REGISTERED_USER -->
 		<li id="username_logged_in" class="rightside <!-- IF CURRENT_USER_AVATAR --> no-bulletin<!-- ENDIF -->" data-skip-responsive="true">
@@ -54,14 +54,14 @@
 					<div class="pointer"><div class="pointer-inner"></div></div>
 					<ul class="dropdown-contents" role="menu">
 						<!-- IF U_RESTORE_PERMISSIONS --><li class="small-icon icon-restore-permissions"><a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a></li><!-- ENDIF -->
-	
+
 						<!-- EVENT navbar_header_profile_list_before -->
-	
+
 						<li class="small-icon icon-ucp"><a href="{U_PROFILE}" title="{L_PROFILE}" role="menuitem">{L_PROFILE}</a></li>
 						<li class="small-icon icon-profile"><a href="{U_USER_PROFILE}" title="{L_READ_PROFILE}" role="menuitem">{L_READ_PROFILE}</a></li>
-	
+
 						<!-- EVENT navbar_header_profile_list_after -->
-	
+
 						<li class="separator"></li>
 						<li class="small-icon icon-logout"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">{L_LOGIN_LOGOUT}</a></li>
 					</ul>
@@ -87,7 +87,7 @@
 		<!-- ENDIF -->
 		<!-- EVENT navbar_header_logged_out_content -->
 	<!-- ENDIF -->
-	
+
 	<!-- IF HEADERLINKS_CODE -->{HEADERLINKS_CODE}<!-- ENDIF -->
 	</ul>
 
@@ -97,8 +97,10 @@
 <div id="body-header">
 	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
 		<!-- DEFINE $MICRODATA = ' itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""' -->
+		<!-- EVENT overall_header_breadcrumbs_before -->
 		<li class="small-icon icon-home breadcrumbs<!-- IF S_IS_LOCKED --> locked<!-- ENDIF -->" role="navigation">
 			<!-- IF U_SITE_HOME --><span class="crumb"><a href="{U_SITE_HOME}"{$MICRODATA} data-navbar-reference="home">{L_SITE_HOME}</a></span><!-- ENDIF -->
+			<!-- EVENT overall_header_breadcrumb_prepend -->
 			<span class="crumb"><a href="{U_INDEX}" accesskey="h"{$MICRODATA} data-navbar-reference="index">{L_INDEX}</a></span>
 			<!-- BEGIN navlinks -->
 				<!-- EVENT overall_header_navlink_prepend -->
@@ -108,6 +110,7 @@
 			<!-- IF S_VIEWTOPIC --><span class="crumb crumb-topic"><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a></span><!-- ENDIF -->
 			<!-- EVENT overall_header_breadcrumb_append -->
 		</li>
+		<!-- EVENT overall_header_breadcrumbs_after -->
 		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 			<li class="responsive-search rightside small-icon icon-search" style="display: none;"><a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}"></a></li>
 		<!-- ENDIF -->

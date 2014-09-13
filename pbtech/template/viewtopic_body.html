@@ -52,7 +52,7 @@
 
 	<!-- IF .pagination or TOTAL_POSTS -->
 		<div class="pagination">
-			<!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS} 
+			<!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
 			<!-- IF .pagination -->
 				<!-- INCLUDE pagination.html -->
 			<!-- ELSE -->
@@ -88,14 +88,14 @@
 				<div class="poll_total_votes<!-- IF not S_DISPLAY_RESULTS --> hidden<!-- ENDIF -->">
 					{L_TOTAL_VOTES}{L_COLON} <span class="poll_total_vote_cnt">{TOTAL_VOTES}</span>
 				</div>
-					
+
 				<div class="poll-footer">
 					<!-- IF not S_DISPLAY_RESULTS -->
 					<a href="{U_VIEW_RESULTS}" class="button1">{L_VIEW_RESULTS}</a>
 					<!-- ELSE -->
 					<a href="#" class="button1 disabled">{L_VIEW_RESULTS}</a>
 					<!-- ENDIF -->
-					
+
 					<!-- IF S_CAN_VOTE -->
 					<input type="submit" name="update" value="{L_SUBMIT_VOTE}" class="button1" />
 					<!-- ELSE -->
@@ -120,7 +120,7 @@
 	<!-- IF postrow.S_FIRST_UNREAD -->
 		<a id="unread" class="anchor"<!-- IF S_UNREAD_VIEW --> data-url="{postrow.U_MINI_POST}"<!-- ENDIF -->></a>
 	<!-- ENDIF -->
-	<div id="p{postrow.POST_ID}" class="post <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_POST_DELETED --> deleted<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --> online<!-- ENDIF --><!-- IF postrow.POSTER_WARNINGS --> warned<!-- ENDIF -->">
+	<div id="p{postrow.POST_ID}" class="post has-profile <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_POST_DELETED --> deleted<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --> online<!-- ENDIF --><!-- IF postrow.POSTER_WARNINGS --> warned<!-- ENDIF -->">
 		<div class="inner">
 
 		<dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
@@ -135,7 +135,7 @@
 				<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF -->
 			</dt>
 
-			<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
+			<!-- IF not S_SMALL_RANKS and (postrow.RANK_TITLE or postrow.RANK_IMG) --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
 
 		<!-- IF postrow.POSTER_POSTS != '' --><dd class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> {postrow.POSTER_POSTS}</dd><!-- ENDIF -->
 		<!-- IF postrow.POSTER_WARNINGS --><dd class="profile-warnings"><strong>{L_WARNINGS}{L_COLON}</strong> {postrow.POSTER_WARNINGS}</dd><!-- ENDIF -->
@@ -160,8 +160,10 @@
 			<!-- ENDIF -->
 
 			<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
-			<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_IMG} {postrow.RANK_TITLE}</dd><!-- ENDIF -->
-			<!-- IF (postrow.POSTS_RANK_TITLE or postrow.POSTS_RANK_IMG) and (postrow.POSTS_RANK_TITLE !== postrow.RANK_TITLE) --><dd class="profile-posts-rank">{postrow.POSTS_RANK_IMG} {postrow.POSTS_RANK_TITLE}</dd><!-- ENDIF -->
+			<!-- IF S_SMALL_RANKS -->
+				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_IMG} {postrow.RANK_TITLE}</dd><!-- ENDIF -->
+				<!-- IF postrow.S_HAS_MULTIPLE_RANKS and (postrow.POSTS_RANK_TITLE or postrow.POSTS_RANK_IMG) --><dd class="profile-posts-rank">{postrow.POSTS_RANK_IMG} {postrow.POSTS_RANK_TITLE}</dd><!-- ENDIF -->
+			<!-- ENDIF -->
 
 
 		<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
@@ -193,7 +195,7 @@
 								<!-- IF REMAINDER eq 0 -->
 									<div>
 								<!-- ENDIF -->
-									<a href="<!-- IF postrow.contact.U_CONTACT -->{postrow.contact.U_CONTACT}<!-- ELSE -->{postrow.contact.U_PROFILE_AUTHOR}<!-- ENDIF -->" title="{postrow.contact.NAME}"<!-- IF $S_LAST_CELL --> class="last-cell"<!-- ENDIF --><!-- IF postrow.contact.ID eq 'jabber' --> onclick="popup(this.href, 550, 320); return false;"<!-- ENDIF -->>
+									<a href="<!-- IF postrow.contact.U_CONTACT -->{postrow.contact.U_CONTACT}<!-- ELSE -->{postrow.contact.U_PROFILE_AUTHOR}<!-- ENDIF -->" title="{postrow.contact.NAME}"<!-- IF $S_LAST_CELL --> class="last-cell"<!-- ENDIF --><!-- IF postrow.contact.ID eq 'jabber' --> onclick="popup(this.href, 750, 320); return false;"<!-- ENDIF -->>
 										<span class="contact-icon {postrow.contact.ID}-icon">{postrow.contact.NAME}</span>
 									</a>
 								<!-- IF REMAINDER eq 3 or postrow.contact.S_LAST_ROW -->
@@ -302,16 +304,6 @@
 				<dl class="attachbox">
 					<dt>
 						{L_ATTACHMENTS}
-						<!-- IF postrow.S_MULTIPLE_ATTACHMENTS -->
-							<div class="dl_links">
-								<strong>{L_DOWNLOAD_ALL}{L_COLON}</strong>
-								<ul>
-								<!-- BEGIN dl_method -->
-									<li>[ <a href="{postrow.dl_method.LINK}">{postrow.dl_method.TYPE}</a> ]</li>
-								<!-- END dl_method -->
-								</ul>
-							</div>
-						<!-- ENDIF -->
 					</dt>
 					<!-- BEGIN attachment -->
 						<dd>{postrow.attachment.DISPLAY_ATTACHMENT}</dd>
@@ -336,6 +328,8 @@
 			<!-- IF postrow.BUMPED_MESSAGE --><div class="notice"><br /><br />{postrow.BUMPED_MESSAGE}</div><!-- ENDIF -->
 			<!-- EVENT viewtopic_body_postrow_post_notices_after -->
 			<!-- IF postrow.SIGNATURE --><div id="sig{postrow.POST_ID}" class="signature">{postrow.SIGNATURE}</div><!-- ENDIF -->
+
+			<!-- EVENT viewtopic_body_postrow_post_content_footer -->
 			</div>
 
 		</div>
@@ -364,7 +358,7 @@
 	</div>
 
 	<!-- INCLUDE viewtopic_topic_tools.html -->
-	
+
 	<!-- IF (S_NUM_POSTS > 1 or .pagination) and not S_IS_BOT  -->
 		<form method="post" action="{S_TOPIC_ACTION}">
 		<!-- INCLUDE display_options.html -->
@@ -388,7 +382,7 @@
 
 	<!-- IF .pagination or TOTAL_POSTS -->
 		<div class="pagination">
-			{TOTAL_POSTS} 
+			{TOTAL_POSTS}
 			<!-- IF .pagination -->
 				<!-- INCLUDE pagination.html -->
 			<!-- ELSE -->
