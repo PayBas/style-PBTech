@@ -16,39 +16,21 @@
 	<link href="{ROOT_PATH}styles/prosilver/theme/cp.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
 	<link href="{ROOT_PATH}styles/prosilver/theme/forms.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
 
-	<!-- IF T_THEME_NAME !== 'pbwow3' -->
-	<link href="{ROOT_PATH}styles/pbwow3/theme/stylesheet.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ENDIF -->
-	<!-- IF T_THEME_NAME == 'pbwow3_wildstar' -->
-	<link href="{ROOT_PATH}styles/pbwow3_heroes/theme/stylesheet.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ELSEIF T_THEME_NAME == 'pbwow3_xmas' -->
-	<link href="{ROOT_PATH}styles/pbwow3_wotlk/theme/stylesheet.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ENDIF -->
+	<link href="{T_THEME_PATH}/pbwow.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
 
 	<link href="{T_STYLESHEET_LINK}" rel="stylesheet" />
 
-	<!-- IF T_THEME_NAME == 'pbwow3' || T_THEME_NAME == 'pbwow3_battlecry' || T_THEME_NAME == 'pbwow3_garrison' || T_THEME_NAME == 'pbwow3_pandaria' || T_THEME_NAME == 'pbwow3_tbc' || T_THEME_NAME == 'pbwow3_warlords' -->
-	<link href="{ROOT_PATH}styles/pbwow3/theme/{T_THEME_LANG_NAME}/stylesheet.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ELSEIF T_THEME_NAME == 'pbwow3_wotlk' || T_THEME_NAME == 'pbwow3_xmas' -->
-	<link href="{ROOT_PATH}styles/pbwow3_wotlk/theme/{T_THEME_LANG_NAME}/stylesheet.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ENDIF -->
-
 	<link href="{ROOT_PATH}styles/prosilver/theme/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" />
-	<link href="{ROOT_PATH}styles/pbwow3/theme/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" />
-	<!-- IF T_THEME_NAME == 'pbwow3_heroes' || T_THEME_NAME == 'pbwow3_wildstar' -->
-	<link href="{ROOT_PATH}styles/pbwow3_heroes/theme/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" />
-	<!-- ENDIF -->
+	<link href="{T_THEME_PATH}/responsive.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" />
 
 	<!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
 	<link href="{ROOT_PATH}styles/prosilver/theme/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<link href="{ROOT_PATH}styles/pbwow3/theme/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
+	<link href="{T_THEME_PATH}/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
 	<!-- ENDIF -->
 
 	<!--[if lte IE 9]>
-	<link href="{ROOT_PATH}styles/pbwow3/theme/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- IF T_THEME_NAME == 'pbwow3_heroes' || T_THEME_NAME == 'pbwow3_wildstar' -->
-	<link href="{ROOT_PATH}styles/pbwow3_heroes/theme/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
-	<!-- ENDIF -->
+	<link href="{ROOT_PATH}styles/prosilver/theme/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
+	<link href="{T_THEME_PATH}/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet" />
 	<![endif]-->
 
 <!-- DEFINE $POPUP = 1 -->
