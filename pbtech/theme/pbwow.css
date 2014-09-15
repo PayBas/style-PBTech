@@ -2599,7 +2599,7 @@ body.fixedbg #video-background {
 	body.fixedbg #video-background { z-index: auto; }
 }
 
-body.fixedbg.topbar #video-background {
+body.topbar #video-background {
 	top: 41px;
 }
 
