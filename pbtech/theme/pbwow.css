@@ -356,6 +356,7 @@ hr {
 	padding: 2px;
 	width: 182px;
 	height: 21px;
+	line-height: 15px;
 	background: #0D1A2D url("./images/forum-menu-search-tile.gif") repeat-x scroll 0 0;
 	border: 1px solid #7F7F7F;
 	border-radius: 2px;
@@ -1620,6 +1621,7 @@ select {
 .search-box .inputbox {
 	border-color: #5d5d5d;
 	line-height: 28px;
+	height: 30px;
 }
 
 .search-box button.search-icon,
