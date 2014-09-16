@@ -1,4 +1,4 @@
-/* Custom CSS for PBWoW Clean
+/* Custom CSS for PBTech
 
 You can customize whatever you want.
 Some defaults are included, like on PBWoW.com
@@ -6,6 +6,12 @@ Some defaults are included, like on PBWoW.com
 Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Awesome/icons/
 
 */
+
+.imageset.site_logo {
+	background: url("./images/logo.png") no-repeat 50% 0;
+	width: 402px;
+	height: 92px;
+}
 
 /* Top-bar links
  * (example of how to apply custom icons to elements in the top-bar)
@@ -34,7 +40,7 @@ Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Aweso
 /* Post profiles
 --------------------------------------------- */
 
-.blizz .postprofile .avatar { 
+.blizz .postprofile .avatar {
 	background: url("./images/avatar-tr-blizz.png") 100% 0 no-repeat, url("./images/avatar-bl-blizz.png") 0 100% no-repeat;
 }
 .blizz .postprofile .avatar img {
@@ -42,7 +48,7 @@ Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Aweso
 	box-shadow: 0 0 8px rgba(1,93,255,0.5);
 }
 
-.mvp .postprofile .avatar { 
+.mvp .postprofile .avatar {
 	background: url("./images/avatar-tr-mvp.png") 100% 0 no-repeat, url("./images/avatar-bl-mvp.png") 0 100% no-repeat;
 }
 .mvp .postprofile .avatar img {
