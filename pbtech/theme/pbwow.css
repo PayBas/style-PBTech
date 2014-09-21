@@ -288,84 +288,6 @@ hr {
 	height: 24px;
 }
 
-/* Search box (header)
---------------------------------------------- */
-#search-box {
-	background: url("./images/forumliner-top-left.gif") no-repeat 0 0;
-	position: absolute;
-	float: none;
-	height: 39px;
-	width: 355px;
-	bottom: 0;
-	left: 12px;
-	text-align: left;
-	margin: 0;
-}
-
-#search-box:before {
-	content: "";
-	display: block;
-	position: absolute;
-	background: url("./en/forum-menu-quicksearch.gif") no-repeat 0 0;
-	width: 85px;
-	height: 17px;
-	left: 6px;
-	top: -6px;
-}
-
-#search-box a.button {
-	background: url("./en/forum-menu-advanced-search.gif") no-repeat 0 0;
-	border: none;
-	height: 17px;
-	width: 107px;
-	padding: 0;
-	position: absolute;
-	left: 94px;
-	top: -6px;
-	font-size: 0;
-	box-shadow: none;
-	transition: none;
-}
-
-#search-box a.button:hover {
-	background-position: 0 100%;
-}
-
-#search-box button.search-icon {
-	background: url("./en/forum-menu-search.gif") no-repeat;
-	height: 39px;
-	width: 74px !important; /* TODO necessary !important? */
-	border: none;
-	border-radius: 0;
-	padding: 0;
-	font-size: 0;
-	box-shadow: none;
-}
-
-#search-box button.search-icon:after,
-#search-box a.button:after {
-	display: none;
-}
-
-#search-box input {
-	vertical-align: top;
-}
-
-#search-box #keywords {
-	margin: 11px 3px 0 12px;
-	padding: 2px;
-	width: 182px;
-	height: 21px;
-	line-height: 15px;
-	background: #0D1A2D url("./images/forum-menu-search-tile.gif") repeat-x scroll 0 0;
-	border: 1px solid #7F7F7F;
-	border-radius: 2px;
-}
-
-#search-box #keywords:focus {
-	border: 1px solid #11A3EA;
-}
-
 /* Breadcrumbs & Navlinks
 --------------------------------------------- */
 #body-header {
@@ -1224,41 +1146,9 @@ fieldset.polls dl.voted {
 	width: 200px;
 }
 
-
-
-/* TODO: this is temporary, because some PRs aren't merged yet */
-.search-box .inputbox {
-	background-image: none;
-	border-right-width: 0;
-	border-radius: 4px 0 0 4px;
-	float: left;
-	height: 24px;
-	padding: 3px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.search-box button {
-	float: left;
-}
-
-.search-box button.search-icon {
-	border-radius: 0;
-	font-size: 0;
-	height: 24px;
-	margin: 0;
-	padding: 3px 5px;
-}
-
-.search-box a.button {
-	border-left-width: 0;
-	border-radius: 0 4px 4px 0;
-	font-size: 0;
-	margin: 0;
-	padding: 2px 5px 2px 3px;
-}
-
+/* Sort & Display options
+@ TODO: this is temporary
+--------------------------------------------- */
 .sort-icon:before {
 	background-position: -80px 0;
 	height: 16px;
@@ -1283,14 +1173,6 @@ fieldset.polls dl.voted {
 .dropdown fieldset.display-options select {
 	min-width: 120px;
 }
-
-.search-box button.search-icon:before {
-	margin: 0 3px;
-	height: 14px;
-	width: 16px;
-}
-
-
 
 /* Search
 --------------------------------------------- */
@@ -1743,6 +1625,85 @@ input.button2::-moz-focus-inner,
 input.button3::-moz-focus-inner {
 	padding: 0;
 	border: 0;
+}
+
+/* Search box (header)
+--------------------------------------------- */
+.search-header {
+	background: url("./images/forumliner-top-left.gif") no-repeat 0 0;
+	border-radius: 0;
+	position: absolute;
+	float: none;
+	height: 39px;
+	width: 355px;
+	bottom: 0;
+	left: 12px;
+	text-align: left;
+	margin: 0;
+}
+
+.search-header:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background: url("./en/forum-menu-quicksearch.gif") no-repeat 0 0;
+	width: 85px;
+	height: 17px;
+	left: 6px;
+	top: -6px;
+}
+
+.search-header a.button {
+	background: url("./en/forum-menu-advanced-search.gif") no-repeat 0 0;
+	border: none;
+	height: 17px;
+	width: 107px;
+	padding: 0;
+	position: absolute;
+	left: 94px;
+	top: -6px;
+	font-size: 0;
+	box-shadow: none;
+	transition: none;
+}
+
+.search-header a.button:hover {
+	background-position: 0 100%;
+}
+
+.search-header button.search-icon {
+	background: url("./en/forum-menu-search.gif") no-repeat;
+	height: 39px;
+	width: 74px !important; /* TODO necessary !important? */
+	border: none;
+	border-radius: 0;
+	padding: 0;
+	font-size: 0;
+	box-shadow: none;
+}
+
+.search-header button.search-icon:after,
+.search-header a.button:after {
+	display: none;
+}
+
+.search-header input {
+	vertical-align: top;
+}
+
+.search-header .inputbox {
+	margin: 11px 3px 0 12px;
+	padding: 2px;
+	width: 182px;
+	height: 21px;
+	line-height: 15px;
+	background: #0D1A2D url("./images/forum-menu-search-tile.gif") repeat-x scroll 0 0;
+	border: 1px solid #7F7F7F;
+	border-radius: 2px;
+}
+
+.search-header .inputbox:focus {
+	border: 1px solid #11A3EA;
 }
 
 /* CP common
@@ -2902,7 +2863,7 @@ span.imageset {
 .unread .imageset.icon_topic_latest { background-image: url("./images/icons/icon_topic_newest.gif"); padding: 9px 0 0 11px; }
 
 /* PBWoW Master style specific assets
-   (exluded in children)
+   (excluded for children)
 --------------------------------------------- */
 
 body.pbwow3 {

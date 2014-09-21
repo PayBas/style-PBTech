@@ -184,56 +184,6 @@ hr {
 	height: 24px;
 }
 
-/* Search box
---------------------------------------------- */
-#search-box {
-	background: url("./images/search-bar.gif") no-repeat 0 0;
-	border: none;
-	height: 31px;
-	position: absolute;
-	right: 10px;
-	left: auto;
-	bottom: 30px;
-	width: 305px;
-	z-index: 1;
-}
-
-#search-box:before {
-	display: none;
-}
-
-#search-box #keywords {
-	background: none;
-	border: none;
-	border-radius: 0;
-	color: #5F3572;
-	font-size: 13px;
-	margin: 0;
-	padding: 7px 0 7px 20px;
-	height: 31px;
-	width: 270px;
-}
-
-#search-box #keywords:focus {
-	border: none;
-	color: #000;
-}
-
-#search-box a.button {
-	display: none; /* TODO: find elegant solutions */
-}
-
-#search-box button.search-icon {
-	background: none;
-	border: medium none;
-	cursor: pointer;
-	height: 31px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 31px !important;
-}
-
 /* Breadcrumbs & Navlinks
 --------------------------------------------- */
 #body-header {
@@ -776,6 +726,56 @@ input.button1:active, input.button3:active, input.button2:active {
 #format-buttons input:active {
     background: #4a0b6b;
     box-shadow: none;
+}
+
+/* Search box (header)
+--------------------------------------------- */
+.search-header {
+	background: url("./images/search-bar.gif") no-repeat 0 0;
+	border: none;
+	height: 31px;
+	position: absolute;
+	right: 10px;
+	left: auto;
+	bottom: 30px;
+	width: 305px;
+	z-index: 1;
+}
+
+.search-header:before {
+	display: none;
+}
+
+.search-header .inputbox {
+	background: none;
+	border: none;
+	border-radius: 0;
+	color: #5F3572;
+	font-size: 13px;
+	margin: 0;
+	padding: 7px 0 7px 20px;
+	height: 31px;
+	width: 270px;
+}
+
+.search-header .inputbox:focus {
+	border: none;
+	color: #000;
+}
+
+.search-header a.button {
+	display: none; /* TODO: find elegant solutions */
+}
+
+.search-header button.search-icon {
+	background: none;
+	border: medium none;
+	cursor: pointer;
+	height: 31px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 31px !important;
 }
 
 /* CP common
@@ -1348,8 +1348,7 @@ dl.pm_read {
 /* =Media queries (all >700px rules are in responsive.css)
 -------------------------------------------------------------- */
 
-@media screen and (max-width: 700px), only screen and (max-device-width: 700px)
-{
+@media screen and (max-width: 700px), only screen and (max-device-width: 700px) {
 	.headerbar {
 		min-height: inherit !important;
 	}
@@ -1363,8 +1362,7 @@ dl.pm_read {
 	}
 }
 
-@media screen and (max-width: 859px), only screen and (max-device-width: 859px)
-{
+@media screen and (max-width: 859px), only screen and (max-device-width: 859px) {
 	.imageset.site_logo {
 		width: 246px;
 		height: 74px;
