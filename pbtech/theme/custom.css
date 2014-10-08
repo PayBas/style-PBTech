@@ -7,10 +7,11 @@ Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Aweso
 
 */
 
-.imageset.site_logo {
+#logo {
 	background: url("./images/logo.png") no-repeat 50% 0;
 	width: 308px;
 	height: 92px;
+	margin: 10px 0;
 }
 
 /* Top-bar links
