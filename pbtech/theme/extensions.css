@@ -318,6 +318,15 @@ h2.pages-title {
 	font-size: 0.9em;
 }*/
 
+/* Thanks for posts (by rxu)
+--------------------------------------------- */
+.thanks-icon:before { content: "\f164"; background: none; }
+.removethanks-icon:before { content: "\f165"; background: none; }
+
+.icon-thanks, .icon-thanks_toplist { padding-left: 0; }
+.icon-thanks_toplist > a:before { content: "\f006"; }
+.icon-thanks > a:before { content: "\f087"; }
+
 /* Board3 Portal
 --------------------------------------------- */
 /* TODO */
