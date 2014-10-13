@@ -75,32 +75,32 @@ jQuery(function($) {
 
 	$('.postprofile').each(function() {
 		var $this = $(this),
-			trigger = $this.find('dt a'),
-			contents = $this.find('.profile-context .dropdown'),
+			$trigger = $this.find('dt a'),
+			$contents = $this.siblings('.profile-context').children('.dropdown'),
 			options = {
 				direction: 'auto',
 				verticalDirection: 'auto'
 			},
 			data;
 
-		if (!trigger.length) {
+		if (!$trigger.length) {
 			data = $this.attr('data-dropdown-trigger');
-			trigger = data ? $this.children(data) : $this.children('a:first');
+			$trigger = data ? $this.children(data) : $this.children('a:first');
 		}
 
-		if (!contents.length) {
+		if (!$contents.length) {
 			data = $this.attr('data-dropdown-contents');
-			contents = data ? $this.children(data) : $this.children('div:first');
+			$contents = data ? $this.children(data) : $this.children('div:first');
 		}
 
-		if (!trigger.length || !contents.length) return;
+		if (!$trigger.length || !$contents.length) return;
 
 		if ($this.hasClass('dropdown-up')) options.verticalDirection = 'up';
 		if ($this.hasClass('dropdown-down')) options.verticalDirection = 'down';
 		if ($this.hasClass('dropdown-left')) options.direction = 'left';
 		if ($this.hasClass('dropdown-right')) options.direction = 'right';
 
-		phpbb.registerDropdown(trigger, contents, options);
+		phpbb.registerDropdown($trigger, $contents, options);
 	});
 	<!-- ENDIF -->
 });

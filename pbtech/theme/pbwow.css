@@ -893,7 +893,7 @@ table.info tbody th {
 }
 
 .postprofile dd {
-	margin: 7px 0;
+	margin: 8px 0;
 	font-size: 0.9em;
 }
 
@@ -2374,11 +2374,12 @@ li.notification-reported strong, li.notification-disapproved strong {
 	background-color: #292A2A;
 }
 
-/* Profile Context Menu */
+/* Profile Context Menu
+--------------------------------------------- */
 .profile-context .dropdown {
 	padding: 0;
-	left: 73%;
-	top: 10px;
+	left: 18%;
+	top: 15px;
 }
 
 .profile-context .dropdown-contents {
@@ -2386,10 +2387,31 @@ li.notification-reported strong, li.notification-disapproved strong {
 	padding: 10px;
 	text-align: left;
 	font-size: 1.1em;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+.profile-context dt {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+.profile-context dd {
+	font-size: 10px;
+	margin: 7px 0;
+}
+
+.profile-context dd:last-child {
+	margin-bottom: 0;
+}
+
+.profile-context a {
+	font-weight: bold;
 }
 
 .profile-context .user-icons {
-	margin-top: 10px;
+	margin: 10px 0;
 	display: block;
 }
 
@@ -2412,6 +2434,7 @@ li.notification-reported strong, li.notification-disapproved strong {
 
 .profile-context .user-icons a:hover {
 	background-color: #525252;
+	text-decoration: none;
 }
 
 .profile-context .user-icons a:first-child {

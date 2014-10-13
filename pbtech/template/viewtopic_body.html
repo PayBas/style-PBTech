@@ -149,41 +149,6 @@
 			<dd><strong>{postrow.PROFILE_FIELD1_NAME}{L_COLON}</strong> {postrow.PROFILE_FIELD1_VALUE}</dd>
 		<!-- ENDIF -->
 
-
-<div class="profile-context">
-	<div class="dropdown hidden">
-		<div id="p{postrow.POST_ID}-context" class="dropdown-contents">
-			<strong class="username">{postrow.POST_AUTHOR}</strong>
-			<!-- IF not S_IS_BOT -->
-			<div class="user-icons">
-				<a class="icon-profile" href="{postrow.U_POST_AUTHOR}">{L_READ_PROFILE}</a>
-				<a class="icon-search" href="{postrow.U_SEARCH}" title="{L_SEARCH_USER_POSTS}"></a>
-				<!-- IF postrow.S_FRIEND --><!--Friend! yay!--><!-- ENDIF -->
-				<!-- IF U_PROFILE --><a class="icon-ignore" href="{U_PROFILE}?i=zebra&mode=foes&add={postrow.POST_AUTHOR}" title="Ignore user" accesskey="e"></a><!-- ENDIF -->
-			</div>
-			<!-- ENDIF -->
-
-			<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
-			<!-- IF S_SMALL_RANKS -->
-				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_IMG} {postrow.RANK_TITLE}</dd><!-- ENDIF -->
-				<!-- IF postrow.S_HAS_MULTIPLE_RANKS and (postrow.POSTS_RANK_TITLE or postrow.POSTS_RANK_IMG) --><dd class="profile-posts-rank">{postrow.POSTS_RANK_IMG} {postrow.POSTS_RANK_TITLE}</dd><!-- ENDIF -->
-			<!-- ENDIF -->
-
-
-		<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
-		<!-- BEGIN custom_fields -->
-			<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->
-				<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
-			<!-- ENDIF -->
-		<!-- END custom_fields -->
-		<!-- EVENT viewtopic_body_postrow_custom_fields_after -->
-
-
-		</div><!-- /.dropdown-contents -->
-	</div><!-- /.dropdown -->
-</div><!-- /.profile-context -->
-
-
 		<!-- EVENT viewtopic_body_contact_fields_before -->
 		<!-- IF not S_IS_BOT and .postrow.contact -->
 			<dd class="profile-contact">
@@ -212,8 +177,40 @@
 			</dd>
 		<!-- ENDIF -->
 		<!-- EVENT viewtopic_body_contact_fields_after -->
-
 		</dl>
+
+		<div class="profile-context">
+			<div class="dropdown hidden">
+				<div id="p{postrow.POST_ID}-context" class="dropdown-contents">
+				<dl>
+					<dt class="username">{postrow.POST_AUTHOR}</dt>
+					<!-- IF not S_IS_BOT -->
+					<dd class="user-icons">
+						<a class="icon-profile" href="{postrow.U_POST_AUTHOR}">{L_READ_PROFILE}</a>
+						<a class="icon-search" href="{postrow.U_SEARCH}" title="{L_SEARCH_USER_POSTS}"></a>
+						<!-- IF postrow.S_FRIEND --><!--Friend! yay!--><!-- ENDIF -->
+						<!-- IF U_PROFILE --><a class="icon-ignore" href="{U_PROFILE}?i=zebra&amp;mode=foes&amp;add={postrow.POST_AUTHOR}" title="Ignore user" accesskey="e"></a><!-- ENDIF -->
+					</dd>
+					<!-- ENDIF -->
+
+					<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
+					<!-- IF S_SMALL_RANKS -->
+					<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_IMG} {postrow.RANK_TITLE}</dd><!-- ENDIF -->
+					<!-- IF postrow.S_HAS_MULTIPLE_RANKS and (postrow.POSTS_RANK_TITLE or postrow.POSTS_RANK_IMG) --><dd class="profile-posts-rank">{postrow.POSTS_RANK_IMG} {postrow.POSTS_RANK_TITLE}</dd><!-- ENDIF -->
+					<!-- ENDIF -->
+
+
+					<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
+					<!-- BEGIN custom_fields -->
+					<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->
+					<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+					<!-- ENDIF -->
+					<!-- END custom_fields -->
+					<!-- EVENT viewtopic_body_postrow_custom_fields_after -->
+				</dl>
+				</div><!-- /.dropdown-contents -->
+			</div><!-- /.dropdown -->
+		</div><!-- /.profile-context -->
 
 		<div class="postbody">
 			<!-- IF postrow.S_POST_HIDDEN -->

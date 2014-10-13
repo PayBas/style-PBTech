@@ -57,7 +57,20 @@
 	right: auto;
 }
 
+.stat-block .online-pagelink {
+	right: auto;
+	left: 3px;
+}
 
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rtl .index-left {
+		margin-left: 0;
+	}
+
+	.rtl .index-right {
+		float: none;
+	}
+}
 
 
 
@@ -120,6 +133,12 @@
 	padding-left: 5px;
 }
 
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rtl .has-profile .post-buttons {
+		left: 5px;
+	}
+}
+
 /* Search box (header)
 --------------------------------------------- */
 .rtl .search-header {
@@ -166,8 +185,8 @@
 .rtl .profile-context .dropdown {
 	padding: 0;
 	left: auto;
-	right: 73%;
-	top: 10px;
+	right: 18%;
+	top: 15px;
 	margin-right: 0 !important;
 }
 
@@ -185,6 +204,13 @@
 
 .rtl .profile-context .user-icons a:last-child {
 	border-radius: 3px 0 0 3px;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rtl .profile-context .dropdown {
+		right: 0;
+		top: 50px;
+	}
 }
 
 /* Icon images

@@ -446,6 +446,7 @@ table.table1 tbody .big-column td {
 	border-radius: 4px;
 	height: auto;
 	width: auto;
+	max-width: 200px;
 }
 
 .postprofile .icons-frame {
@@ -1220,14 +1221,17 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 	background-image: url("./images/icons/child-arrow-big.png");
 }
 
-/* Profile Context Menu */
+/* Profile Context Menu
+--------------------------------------------- */
 .profile-context .dropdown-contents {
 	background-color: #4d606d;
 	border-color: #8fa7b7;
 }
+
 .profile-context .dropdown-contents strong {
 	color: #FFF;
 }
+
 .profile-context dd {
 	color: #acbdc8;
 }
@@ -1235,6 +1239,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 .profile-context a {
 	color: #9dbecb;
 }
+
 .profile-context a:hover {
 	color: #FFF;
 }
@@ -1243,16 +1248,20 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 	background: #6b7f8d;
 	color: #c7dceb;
 	padding: 0 10px !important;
+	font-size: 11px;
 }
+
 .profile-context .user-icons a:before {
 	color: #c7dceb;
 	display: inline-block;
 	text-shadow: none;
 }
+
 .profile-context .user-icons a:hover {
 	background: #92a9ba;
 	color: #FFF;
 }
+
 .profile-context .user-icons a:hover:before {
 	color: #FFF;
 }
