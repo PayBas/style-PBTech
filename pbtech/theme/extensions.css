@@ -175,6 +175,10 @@ ul.menu li {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.notouch #phpbb_announcement:hover .close {
+	opacity: 1;
+}
+
 /* Pages
 --------------------------------------------- */
 h2.pages-title {
@@ -209,8 +213,8 @@ h2.pages-title {
 #quick-login-panel {
 	background: #1B1B1B;
 	background: url("./images/poll-right.gif") no-repeat 100% 0,
-	url("./images/poll-left.gif") no-repeat 0 0,
-	url("./images/poll-bg.jpg") repeat-x 50% 0, #1B1B1B;
+				url("./images/poll-left.gif") no-repeat 0 0,
+				url("./images/poll-bg.jpg") repeat-x 50% 0, #1B1B1B;
 	border: 5px solid #333;
 	border-radius: 3px;
 	padding: 0;

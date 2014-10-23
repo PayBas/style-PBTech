@@ -919,14 +919,21 @@ input.button1:active, input.button3:active, input.button2:active {
 	border-color: #FCFBFA;
 	color: #5d5d5d;
 }
+
+.rtl #navigation a {
+	background: linear-gradient(to right, #ECEBEA, #FCFBFA);
+}
+
 #navigation a:hover {
 	background: #FCFBFA;
 	color: #0295ee;
 }
+
 #navigation #active-subsection a {
 	background: #FCFBFA;
 	color: #074e79;
 }
+
 #navigation #active-subsection a:hover {
 	color: #0295ee;
 }
@@ -1406,7 +1413,7 @@ dl.pm_read {
 .pm_read							{ background-image: url("./images/icons/topic_read.png"); }
 .pm_unread							{ background-image: url("./images/icons/topic_unread.png"); }
 
-/* Icon images
+/* Right-to-Left languages
 --------------------------------------------- */
 .rtl .search-header {
 	background: url("./images/search-bar-rtl.gif") no-repeat;
@@ -1415,7 +1422,8 @@ dl.pm_read {
 }
 
 .rtl .search-header .inputbox {
-	padding-right: 20px !important;
+	padding: 7px 20px 7px 0 !important;
+	float: right !important;
 }
 
 .rtl .search-header button.search-icon {
@@ -1442,6 +1450,10 @@ dl.pm_read {
 
 	#body-header ul.linklist {
 		padding: 7px 10px !important;
+	}
+
+	.postprofile .avatar {
+		background: none !important;
 	}
 }
 

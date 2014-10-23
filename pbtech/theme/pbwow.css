@@ -18,7 +18,7 @@ html {
 body {
 	color: #CCCCCC;
 	font-size: 10px;
-	background: #000 url("./images/theme/pandaria.jpg") no-repeat 49.999% 0;
+	background: #000 url("./images/theme/wod.jpg") no-repeat 49.999% 0;
 	margin: 0;
 	padding: 0;
 	overflow-y: scroll;
@@ -1864,6 +1864,10 @@ dl.mini dt {
 	border-right: none;
 }
 
+.rtl #navigation a { /* Do it here instead of bidi.css, so it's easier to overrule by children) */
+	background: rgba(40, 40, 40, 0.7) linear-gradient(to right, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100px);
+}
+
 #navigation a:hover {
 	background: #212121;
 	text-decoration: none;
@@ -2902,7 +2906,7 @@ body.pbwow3 #page-body:before {
 
 @media only screen and (max-width: 999px), only screen and (max-device-width: 999px) {
 	body.pbwow3 {
-		background-image: url("./images/theme/pandaria-small.jpg");
+		background-image: url("./images/theme/wod-small.jpg");
 		background-position: 0 0;
 	}
 

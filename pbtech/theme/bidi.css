@@ -92,6 +92,12 @@
 	float: right;
 }
 
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rtl .postbody {
+		float: none;
+	}
+}
+
 .rtl .post .postbody h3,
 .rtl .post p.author {
 	margin-right: 10px;
@@ -110,6 +116,12 @@
 
 .rtl .postprofile .avatar {
 	float: none;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rtl .postprofile .avatar {
+		float: right;
+	}
 }
 
 .rtl .has-profile .postbody {
@@ -139,11 +151,30 @@
 	}
 }
 
+/* Pagination
+--------------------------------------------- */
+.rtl .pagination li.next a:after {
+	content: '\f053';
+	padding-left: 0px;
+	padding-right: 1px;
+}
+
+.rtl .pagination li.previous a:after {
+	content: '\f054';
+	padding-right: 0px;
+	padding-left: 1px;
+}
+
 /* Search box (header)
 --------------------------------------------- */
 .rtl .search-header {
 	float: none;
 	margin-left: 0;
+}
+
+.rtl .search-header .inputbox,
+.rtl .search-header button.search-icon {
+	float: left;
 }
 
 /* Collapseable blocks
@@ -211,6 +242,13 @@
 		right: 0;
 		top: 50px;
 	}
+}
+
+/* Sort & Display options
+@ TODO: this is temporary
+--------------------------------------------- */
+.rtl .dropdown fieldset.display-options label {
+	text-align: left;
 }
 
 /* Icon images
