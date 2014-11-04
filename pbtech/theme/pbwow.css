@@ -1301,7 +1301,7 @@ dl.faq dt {
 }
 
 dl.thumbnail img,
-.postbody a > img.postimage {
+.content a > img.postimage {
 	background-color: rgba(0, 0, 0, 0.4);
 	/*border: 1px solid #372511 !important;*/
 	border: 1px solid #666 !important; /* !important for lightbox script */
@@ -1311,13 +1311,12 @@ dl.thumbnail img,
 	transition: border 0.25s ease-out 0s;
 }
 
-dl.thumbnail dt a:hover,
-.postbody a > img.postimage:hover {
+dl.thumbnail dt a:hover {
 	background-color: #222222;
 }
 
 dl.thumbnail dt a:hover img,
-.postbody a > img.postimage:hover {
+.content a > img.postimage:hover {
 	border: 1px solid #CD9000 !important; /* !important for lightbox script */
 }
 

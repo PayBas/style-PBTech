@@ -624,7 +624,7 @@ fieldset.fields2 dl:hover dt label {
 }
 
 dl.thumbnail img,
-.postbody a > img.postimage {
+.content a > img.postimage {
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 3px solid #888 !important;
 	border-radius: 0 !important;
@@ -634,12 +634,12 @@ dl.thumbnail img,
 }
 
 dl.thumbnail dt a:hover,
-.postbody a > img.postimage:hover {
+.content a > img.postimage:hover {
 	background: none;
 }
 
 dl.thumbnail dt a:hover img,
-.postbody a > img.postimage:hover {
+.content a > img.postimage:hover {
 	border: 3px solid #00b6ff !important;
 }
 
