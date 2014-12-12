@@ -244,7 +244,7 @@ h2.pages-title {
 	width: 171px !important;
 }
 
-#quick-login-panel dd {
+#quick-login-panel dd.input-container {
 	background: url("./images/options-account-bg.gif") no-repeat 50% 100%;
 	width: 241px;
 	height: 49px;
@@ -252,8 +252,14 @@ h2.pages-title {
 	position: relative;
 }
 
-#quick-login-panel .ql-password dd {
+#quick-login-panel .ql-password dd.input-container {
 	background-image: url("./images/options-email-bg.gif");
+}
+
+#quick-login-panel dd.input-link {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5px;
 }
 
 #quick-login-panel dt {
@@ -330,6 +336,141 @@ h2.pages-title {
 .icon-thanks, .icon-thanks_toplist { padding-left: 0; }
 .icon-thanks_toplist > a:before { content: "\f006"; }
 .icon-thanks > a:before { content: "\f087"; }
+
+/* Ajax Shoutbox
+--------------------------------------------- */
+.ajaxshoutbox_panel {
+	margin: 0 2px;
+}
+
+.ajaxshoutbox_post {
+	position: relative;
+	margin: 5px 0;
+}
+
+.ajaxshoutbox_loadingbar:before {
+	display: block;
+	font-family: FontAwesome;
+	content: "\f021";
+	font-weight: normal;
+	font-size: 16px;
+	line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-animation: load-spin 2s infinite linear;
+	animation: load-spin 2s infinite linear;
+	opacity: 0.7;
+}
+
+@-webkit-keyframes load-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+@keyframes load-spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+
+#ajaxshoutbox_loadbefore,
+#ajaxshoutbox_loadafter {
+	display: none;
+}
+
+#ajaxshoutbox_loadbefore {
+	position: absolute;
+	right: 1px;
+	top: 0;
+}
+
+ul.waitinglist dt {
+	width: 100%;
+}
+
+ul.ajaxshoutboxpost dt {
+	width: 100%;
+}
+
+#shoutbox_scroll {
+	max-height: 230px;
+	overflow: auto;
+}
+
+#copy { /* This element is used to copy data from. Do not show */
+	display: none;
+}
+
+ul.shoutboxlist dt,
+ul.shoutboxlist dd {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 3px;
+}
+
+ul.shoutboxlist dt {
+	width: 125px;
+	margin: 0;
+	padding-left: 0;
+}
+
+ul.shoutboxlist li.row .list-inner {
+	margin: 0;
+	padding: 0;
+}
+
+ul.shoutboxlist span.ajaxshoutbox_username {
+	display: block;
+	font-size: 1.1em;
+}
+
+ul.shoutboxlist span.ajaxshoutbox_date {
+	display: block;
+	opacity: 0.5;
+	font-size: 0.9em;
+}
+
+ul.shoutboxlist dd.ajaxshoutbox_message {
+	font-size: 1.1em;
+	margin-left: 128px;
+	float: none;
+	display: block;
+}
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+	ul.shoutboxlist dt {
+		width: auto;
+	}
+
+	ul.shoutboxlist li.row .list-inner {
+		min-height: inherit;
+	}
+
+	ul.shoutboxlist span.ajaxshoutbox_username,
+	ul.shoutboxlist span.ajaxshoutbox_date {
+		display: inline-block;
+	}
+
+	ul.shoutboxlist span.ajaxshoutbox_date::before {
+		content: '\007E ';
+	}
+
+	ul.shoutboxlist dd.ajaxshoutbox_message {
+		clear: both;
+		margin-left: auto;
+	}
+}
 
 /* Board3 Portal
 --------------------------------------------- */
