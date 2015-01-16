@@ -2491,13 +2491,13 @@ li.notification-reported strong, li.notification-disapproved strong {
 	padding: 0;
 }
 
-#top-bar .linklist > li.link a {
+#top-bar .linklist > li.link > a {
 	padding: 0 15px !important;
 	display: block;
 	font-weight: bold;
 }
 
-#top-bar .linklist > li.link a:hover {
+#top-bar .linklist > li.link > a:hover {
 	background-color: rgba(255, 255, 255, 0.05);
 	text-shadow: 0 0 7px rgba(255, 255, 255, 0.4);
 }
