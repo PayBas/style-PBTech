@@ -448,6 +448,36 @@ ul.shoutboxlist dd.ajaxshoutbox_message {
 	display: block;
 }
 
+ul.shoutboxlist dd.ajaxshoutbox_delete {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+
+ul.shoutboxlist .ajaxshoutbox_delete_btn {
+	background: none;
+	border: none;
+	outline: none;
+	display: none;
+}
+
+ul.shoutboxlist li.row:hover .ajaxshoutbox_delete_btn {
+	display: block;
+}
+
+ul.shoutboxlist .ajaxshoutbox_delete_btn:before {
+	display: block;
+	font-family: FontAwesome;
+	color: #F00;
+	content: "\f00d";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
 	ul.shoutboxlist dt {
 		width: auto;
