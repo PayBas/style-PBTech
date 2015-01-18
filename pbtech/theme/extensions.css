@@ -76,11 +76,11 @@
 	border-color: #2A292B;
 }
 
-#breadcrumb-menu .dropdown-contents a {
+#breadcrumb-menu a {
 	padding: 5px 16px 5px 8px;
 }
 
-#breadcrumb-menu .dropdown-contents a:hover {
+#breadcrumb-menu a:hover {
 	background-color: #1C1B1A;
 	text-decoration: none;
 }
@@ -110,6 +110,27 @@
 
 #breadcrumb-menu li.current > a {
 	color: #00C0FF;
+}
+
+#breadcrumb-menu .dropdown-left a {
+	padding-left: 16px;
+	padding-right: 8px;
+}
+
+#breadcrumb-menu .dropdown-left .children > a:before {
+	content: '\f053';
+}
+
+#breadcrumb-menu .touch-trigger {
+	padding: 0 7px;
+	top: 1px;
+	bottom: 1px;
+	right: 1px;
+}
+
+#breadcrumb-menu .dropdown-left .touch-trigger {
+	left: 1px;
+	right: auto;
 }
 
 /* Board Rules
@@ -728,7 +749,7 @@ div.avatarMessage {
 	border-color: #cac9c8;
 }
 
-#breadcrumb-menu .dropdown-contents a:hover {
+#breadcrumb-menu a:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
