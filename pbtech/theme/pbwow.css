@@ -424,7 +424,7 @@ hr {
 	width: 50%;
 }
 
-.forum-blocks dl.icon {
+.forum-blocks dl {
 	display: block;
 	position: relative;
 	min-height: 110px;
@@ -453,7 +453,7 @@ hr {
 	display: block;
 }
 
-.forum-blocks dl.icon .list-inner {
+.forum-blocks dl .list-inner {
 	margin: 0 0 8px 47px;
 	padding: 0;
 	color: #877B69;
@@ -462,16 +462,22 @@ hr {
 	transition: all 0.25s ease-in-out 0s;
 }
 
-.forum-blocks dl.icon .forum-image {
+.forum-blocks dl .forum-image {
 	text-align: center;
 }
 
-.forum-blocks dl.icon a.icon-link {
+.forum-blocks dl a.icon-link {
 	margin: 0;
 	left: 10px;
 	top: 15px;
 	height: 35px;
 	width: 35px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.forum-blocks dl a.icon-link.no-forum-image {
+	top: 10px;
 }
 
 .forum-blocks a.forumtitle {
@@ -2932,7 +2938,7 @@ body.pbwow3 #page-body:before {
 		min-height: inherit;
 	}
 
-	.forum-blocks li.row dl.icon {
+	.forum-blocks li.row dl {
 		min-height: inherit;
 	}
 

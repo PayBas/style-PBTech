@@ -33,12 +33,12 @@
 	float: left;
 }
 
-.rtl .forum-blocks dl.icon a.icon-link {
+.rtl .forum-blocks dl a.icon-link {
 	left: auto;
 	right: 10px;
 }
 
-.rtl .forum-blocks dl.icon .list-inner {
+.rtl .forum-blocks dl .list-inner {
 	padding: 0;
 	margin-left: 0;
 	margin-right: 47px;

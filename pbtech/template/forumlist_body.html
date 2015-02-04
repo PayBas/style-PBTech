@@ -28,10 +28,10 @@
 		<!-- EVENT forumlist_body_forum_row_before -->
 		<li class="row">
 			<!-- EVENT forumlist_body_forum_row_prepend -->
-			<dl class="icon {forumrow.FORUM_IMG_STYLE}">
+			<dl<!-- IF forumrow.S_UNREAD_FORUM --> class="unread"<!-- ENDIF -->>
 				<dt title="{forumrow.FORUM_FOLDER_IMG_ALT}">
 					<!-- IF forumrow.FORUM_IMAGE --><div class="forum-image">{forumrow.FORUM_IMAGE}</div><!-- ENDIF -->
-					<a href="{forumrow.U_VIEWFORUM}" class="icon-link"></a>
+					<a href="{forumrow.U_VIEWFORUM}" class="icon-link<!-- IF not forumrow.FORUM_IMAGE --> no-forum-image {forumrow.FORUM_IMG_STYLE}<!-- ENDIF -->"></a>
 
 					<!-- IF .forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
 					<div class="dropdown-container dropdown-button-control">
@@ -60,7 +60,7 @@
 				<!-- IF forumrow.CLICKS -->
 					<dd class="redirect"><span>{L_REDIRECTS}{L_COLON} {forumrow.CLICKS}</span></dd>
 				<!-- ELSEIF not forumrow.S_IS_LINK -->
-					<dd class="forum-stats<!-- IF forumrow.S_UNREAD_FORUM --> unread<!-- ENDIF -->"><span>
+					<dd class="forum-stats"><span>
 						<!-- IF forumrow.LAST_POST_TIME -->(<dfn>{L_TOPICS}{L_COLON}</dfn> {forumrow.TOPICS} | <dfn>{L_POSTS}{L_COLON}</dfn>{forumrow.POSTS})
 						<!-- IF not S_IS_BOT --><a href="{forumrow.U_LAST_POST}" title="<!-- IF forumrow.S_UNREAD_FORUM -->{L_UNREAD_POSTS}<!-- ELSE -->{L_NO_UNREAD_POSTS}<!-- ENDIF -->">{LAST_POST_IMG}</a><!-- ENDIF --><!-- ELSE -->{L_NO_POSTS}<!-- ENDIF -->
 						<!-- EVENT forumlist_body_last_post_title_prepend -->

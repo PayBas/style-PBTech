@@ -215,7 +215,7 @@ hr {
 
 /* Index & forum lists
 --------------------------------------------- */
-.forum-blocks dl.icon,
+.forum-blocks dl,
 .misc-block,
 .stat-block p {
 	background: #E5E4E3;
@@ -225,7 +225,7 @@ hr {
 	padding: 12px 10px;
 }
 
-.forum-blocks dl.icon .list-inner {
+.forum-blocks dl .list-inner {
 	color: #656565;
 }
 
@@ -240,6 +240,10 @@ hr {
 .forum-blocks dd.mcp-status,
 #recent-topics dd.lastpost {
 	color: #8d929c;
+}
+
+.forum-blocks dl.unread {
+	background: #F2F1F0;
 }
 
 /* Hover states */
