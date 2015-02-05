@@ -868,6 +868,9 @@ table.info tbody th {
 	margin: 2px auto 0;
 	padding: 8px 10px 11px 8px;
 	position: relative;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
 }
 
 .postprofile .avatar img {

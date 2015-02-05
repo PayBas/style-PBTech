@@ -439,6 +439,9 @@ table.table1 tbody .big-column td {
 	background: url("./images/avatar-tr.png") 100% 0 no-repeat, url("./images/avatar-bl.png") 0 100% no-repeat;
 	margin-top: 5px;
 	padding: 5px;
+	width: auto;
+	height: auto;
+	overflow: visible;
 }
 
 .postprofile .avatar:after {
