@@ -523,6 +523,16 @@ ul.shoutboxlist .ajaxshoutbox_delete_btn:before {
 	}
 }
 
+/* Top Five
+--------------------------------------------- */
+#top_five li {
+	padding: 4px 0;
+}
+
+#top_five .meta {
+	font-size: 9px;
+}
+
 /* Board3 Portal
 --------------------------------------------- */
 /* TODO */
