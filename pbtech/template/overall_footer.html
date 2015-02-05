@@ -50,6 +50,37 @@
 jQuery(function($) {
 	'use strict';
 
+	/* Anchor jump offset for top-bar */
+	function scroll_if_anchor(href) {
+		href = typeof(href) == "string" ? href : $(this).attr("href");
+
+		if(!href) return;
+		var fromTop = $topBarHeight + 4;
+		var $target = $(href);
+
+		// Older browsers without pushState might flicker here, as they momentarily jump to the wrong position (IE < 10)
+		if($target.length) {
+			$('html, body').scrollTop($target.offset().top - fromTop);
+			if(history && "pushState" in history) {
+				history.pushState({}, document.title, window.location.href.split("#")[0] + href);
+				//window.location.hash = href;
+				return false;
+			}
+		}
+	}
+
+	var $topBar = $('#top-bar');
+	var $topBarHeight = 0;
+
+	if ($topBar.length) {
+		$topBarHeight = $topBar.outerHeight();
+
+		$("body").on("click", "a[href^='#']", scroll_if_anchor);
+
+		scroll_if_anchor(window.location.hash);
+	}
+
+	/* Collapse boxes */
 	$('.stat-block.online-list').attr('id', 'online-list');
 	$('.stat-block.birthday-list').attr('id', 'birthday-list');
 	$('.stat-block.statistics').attr('id', 'statistics');
@@ -71,6 +102,7 @@ jQuery(function($) {
 	});
 
 	<!-- IF S_VIEWTOPIC -->
+	/* Mini-profile context drop-down menus */
 	phpbb.dropdownVisibleContainers += ', .profile-context';
 
 	$('.postprofile').each(function() {
