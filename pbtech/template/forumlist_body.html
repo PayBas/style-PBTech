@@ -1,19 +1,19 @@
 <!-- BEGIN forumrow -->
-	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT -->
 			</ul>
 
 			</div>
 		</div>
-	<!-- IF S_INDEX  -->
 	</div>
-	<!-- ENDIF -->
 	<!-- ENDIF -->
 
 	<!-- EVENT forumlist_body_category_header_before -->
 
-<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW or forumrow.S_NO_CAT -->
 
-	<!-- IF S_INDEX or (S_VIEWFORUM and not (S_DISPLAY_ACTIVE or TOTAL_TOPICS)) -->
+	<!-- IF not S_INDEX and forumrow.S_FIRST_ROW and forumrow.S_NO_CAT -->
+	<div class="no-collapse-box">
+	<!-- ELSE -->
 	<div id="category-{forumrow.FORUM_ID}" class="collapse-box">
 		<h2><!-- IF forumrow.S_IS_CAT --><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><!-- ELSE -->{L_FORUMS}<!-- ENDIF --></h2>
 	<!-- ENDIF -->
@@ -83,11 +83,10 @@
 
 <!-- IF forumrow.S_LAST_ROW -->
 			</ul>
+
+			</div>
 		</div>
 	</div>
-	<!-- IF S_INDEX or (S_VIEWFORUM and not (S_DISPLAY_ACTIVE or TOTAL_TOPICS)) -->
-	</div>
-	<!-- ENDIF -->
 
 <!-- EVENT forumlist_body_last_row_after -->
 <!-- ENDIF -->
