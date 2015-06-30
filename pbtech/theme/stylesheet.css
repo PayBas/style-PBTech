@@ -727,6 +727,14 @@ label, dd label {
 
 #message-box textarea { color: #5a5a5a; }
 
+#message-box textarea.drag-n-drop {
+	outline-color: rgba(102, 102, 102, 0.5);
+}
+
+#message-box textarea.drag-n-drop-highlight {
+	outline-color: rgba(17, 163, 234, 0.5);
+}
+
 .inputbox {
 	background: #FFF;
 	border-color: #cac9c8;

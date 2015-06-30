@@ -10,13 +10,14 @@
 	<!-- EVENT forumlist_body_category_header_before -->
 
 <!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW or forumrow.S_NO_CAT -->
+					<!-- EVENT forumlist_body_category_header_row_prepend -->
 	<!-- IF not S_INDEX and forumrow.S_FIRST_ROW and not forumrow.S_IS_CAT -->
 	<div class="no-collapse-box">
 	<!-- ELSE -->
 	<div id="category-{forumrow.FORUM_ID}" class="collapse-box">
 		<h2><!-- IF forumrow.S_IS_CAT --><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><!-- ELSE -->{L_FORUMS}<!-- ENDIF --></h2>
 	<!-- ENDIF -->
-
+					<!-- EVENT forumlist_body_category_header_row_append -->
 	<div class="forabg forum-blocks">
 		<div class="inner">
 			<ul class="forums">
