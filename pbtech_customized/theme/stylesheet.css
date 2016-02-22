@@ -117,9 +117,18 @@ a.forumtitle:active,	.forumbg .header a:active,	.forabg .header a:active, 	th a:
 #nav-main > li > a:active,	#page-footer a:active	{ color: #FFF; }
 
 /* Post body links */
-.postlink 			{ color: #074e79; border-bottom-color: #2f7899; }
-.postlink:active	{ color: #0295ee; border-bottom-color: #4F93B6; }
-.postlink:hover		{ color: #0295ee; border-bottom-color: #4F93B6; }
+.postlink {
+	border-bottom-color: #2f7899;
+	color: #074e79;
+}
+.postlink:active {
+	border-bottom-color: #4F93B6;
+	color: #0295ee;
+}
+.postlink:hover {
+	border-bottom-color: #4F93B6;
+	color: #0295ee;
+}
 
 a.up:hover, a.down:hover, a.left:hover, a.right:hover, a.top:hover, a.top2:hover,
 a.arrow-up:hover, a.arrow-down:hover, a.arrow-left:hover, a.arrow-right:hover {
@@ -718,6 +727,14 @@ label, dd label {
 
 #message-box textarea { color: #5a5a5a; }
 
+#message-box textarea.drag-n-drop {
+	outline-color: rgba(102, 102, 102, 0.5);
+}
+
+#message-box textarea.drag-n-drop-highlight {
+	outline-color: rgba(17, 163, 234, 0.5);
+}
+
 .inputbox {
 	background: #FFF;
 	border-color: #cac9c8;
@@ -987,9 +1004,9 @@ input.button1:active, input.button3:active, input.button2:active {
 	box-shadow: none;
 }
 .pagination li.active span {
-	color: #FFFFFF;
 	background-color: #0080B2;
 	border-color: transparent;
+	color: #FFFFFF;
 }
 .pagination li.active span:hover {
 	background-color: #009EE2;
