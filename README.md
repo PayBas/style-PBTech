@@ -37,6 +37,9 @@ For more information and support, we suggest you visit
 
 ### Changes
 
+3.0.7 (05-3-2016)
+- updated for phpbb 3.1.8
+
 3.0.6 (05-3-2016)
 - updated for phpbb 3.1.7
 
