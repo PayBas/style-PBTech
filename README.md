@@ -29,8 +29,16 @@ You can use this method to add icons to just about every element. A commonly use
 ````
 Change the `xxx` to the "route" of your custom page
 
-#### Support
-For more information and support, we suggest you visit [PBWoW.com] (http://pbwow.com/forum/)
+### Support
+
+For more information and support, we suggest you visit 
+- [PBWoW.com] (http://pbwow.com/forum/) (is down)
+- [avathar.be] (http://www.avathar.be/bbdkp/viewforum.php?f=82)  
+
+### Changes
+
+3.0.5 (05-3-2016)
+- updated for phpbb 3.1.6
 
 ### License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
