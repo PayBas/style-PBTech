@@ -1,4 +1,4 @@
-PBTech Style for phpBB 3.1
+PBTech Style for phpBB 3.1.9
 ============
 
 ![Screenshot](screenshot.png)
