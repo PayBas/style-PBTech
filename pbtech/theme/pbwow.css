@@ -1308,43 +1308,6 @@ dl.thumbnail dt a:hover img,
 	text-shadow: none;
 }
 
-/* Code block */
-.codebox {
-	background-color: rgba(10, 10, 10, 0.3);
-	border-color: #575757;
-	text-shadow: none;
-	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
-}
-
-.codebox p {
-	border-bottom-color: #575757;
-}
-
-.codebox code {
-	color: #4A7;
-	text-align: left;
-	max-height: 400px;
-}
-
-.syntaxbg { color: #555; }
-.syntaxcomment { color: #F0C674; }
-.syntaxdefault { color: #81A2BE; }
-.syntaxhtml { color: #AAA; }
-.syntaxkeyword { color: #B5BD68; }
-.syntaxstring { color: #C66; }
-
-code.inline {
-	background-color: rgba(10, 10, 10, 0.3);
-	border: 1px solid rgba(88, 88, 88, 0.7);
-	border-radius: 2px;
-	color: #4A7;
-	display: inline;
-	font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;
-	font-size: 0.9em;
-	font-style: normal;
-	line-height: 1.3em;
-	padding: 0 3px;
-}
 
 /* Buttons
 --------------------------------------------- */

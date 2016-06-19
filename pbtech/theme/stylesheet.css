@@ -590,21 +590,55 @@ blockquote {
 	box-shadow: none;
 }
 
-.codebox,
-code.inline {
-	background: rgba(67, 67, 67, 0.12);
+/* Code block */
+.codebox, code.inline {
+	background: linear-gradient(to bottom, #cacac7 0%, #C8C8C8 60%);
 	border-color: transparent;
 	box-shadow: none;
-	color: #006b27;
+	color: #35B92F;
 }
 
 .codebox code {
-	color: #006b27;
+	color: #35B92F;
+	text-align: left;
+	max-height: 400px;
 }
 
 .codebox p {
 	border-color: #999;
+	border-bottom-color: #afafaf;
 }
+
+dl.codebox {
+	background-color: rgba(28, 40, 100, 0.2);
+}
+
+.codebox {
+	background-color: rgba(10, 10, 10, 0.3);
+	text-shadow: none;
+}
+
+.syntaxbg { color: #000C18; }
+.syntaxcomment { color: #5a545c; }
+.syntaxdefault { color: #435f9f; }
+.syntaxkeyword { color: #171e2d; }
+.syntaxstring { color: #930c06; }
+.syntaxhtml { color: #AAA; }
+
+code.inline {
+	background-color: rgba(10, 10, 10, 0.3);
+	border: 1px solid rgba(88, 88, 88, 0.7);
+	border-radius: 2px;
+	color: #209347;
+	display: inline;
+	font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;
+	font-size: 0.8em;
+	font-style: normal;
+	line-height: 1.3em;
+	padding: 0 3px;
+}
+
+/* attachbox */
 
 .attachbox {
 	background: rgba(67, 67, 67, 0.12);
@@ -612,10 +646,6 @@ code.inline {
 
 dl.file dd {
 	color: #858084;
-}
-
-dl.codebox {
-	background-color: rgba(28, 40, 100, 0.2);
 }
 
 .notice, .signature {
