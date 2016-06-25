@@ -37,11 +37,12 @@ For more information and support, we suggest you visit
 
 ### Changes
 
-3.0.8.1 (25-6-2016)
-- new design for top bar
-- new design for rules
-- changed colors for bbcode code box
-- updated fontawesome to 4.6
+3.0.8.1 (26-6-2016)
+- new design for Polls
+- new design for Top bar
+- new design for Rules
+- changed colors for Bbcode code box
+- updated Fontawesome to 4.6
 - fix for Recent topics
 
 3.0.8 (12-6-2016)
