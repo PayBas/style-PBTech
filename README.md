@@ -38,6 +38,7 @@ For more information and support, we suggest you visit
 ### Changes
 
 3.0.8.1 (25-6-2016)
+- updated fontawesome to 4.6
 - changed colors for bbcode code box
 - fix for Recent topics
 

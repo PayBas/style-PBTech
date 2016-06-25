@@ -1,6 +1,6 @@
 /*  phpBB3 Style Sheet
 	--------------------------------------------------------------
-	Style name:			PBWoW 3
+	Style name:			pbWoW 3
 	Based on style:		prosilver (the default phpBB 3.1.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
 	Modified by:		PayBas ( http://pbwow.com/ )
@@ -136,11 +136,11 @@ body {
 --------------------------------------------- */
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0');
-	src: url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),
-	url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),
-	url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),
-	url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+	src: url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
+	src: url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+	url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+	url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+	url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -403,7 +403,7 @@ hr {
 	background: none;
 }
 
-#phpbbleftside .forum-blocks li.row {
+.index-left .forum-blocks li.row {
 	width: 50%;
 }
 
@@ -2037,7 +2037,7 @@ dl.mini dt {
 div.rules {
 	background: #111;
 	background: rgba(20, 20, 20, 0.7);
-	border: solid 1px #AA1111;
+	border: 0px;
 	border-radius: 0;
 	padding: 10px 10px 12px;
 	color: #FFF;
@@ -2062,48 +2062,6 @@ body.section-viewtopic div.rules > .inner {
 	background: linear-gradient(to bottom, rgba(23, 23, 23, 1) 0, rgba(49, 49, 49, 0) 82px), linear-gradient(to top, rgba(26, 26, 26, 1) 0, rgba(49, 49, 49, 0) 46px), #313131;
 	border: 1px solid #000;
 	padding: 10px;
-}
-
-div.rules strong {
-	display: block;
-	background: #320000;
-	background: linear-gradient(to bottom, rgba(40, 1, 1, 1) 0, rgba(60, 5, 5, 1) 25px);
-	border: 1px solid transparent;
-	border-color: #600C0C #000 #000 #500C0C;
-	padding: 6px;
-	margin: -10px -10px -5px -10px;
-	font-size: 1.3em;
-	text-align: center;
-	text-transform: uppercase;
-	box-shadow: 0 0 3px #000;
-}
-
-div.rules.rules-link, div.rules.rules-link > .inner {
-	background: none;
-	border: none;
-	box-shadow: none;
-	padding: 0;
-}
-
-div.rules-link a {
-	display: block;
-	padding: 10px;
-	background: #320000;
-	background: linear-gradient(to bottom, rgba(30, 1, 1, 1), rgba(70, 5, 5, 1));
-	border: 1px solid #811;
-	color: #FFF;
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-div.rules-link a:hover {
-	background: #320000;
-	background: linear-gradient(to bottom, rgba(60, 10, 10, 1), rgba(110, 10, 10, 1));
-	border-color: #C11;
-	color: #FFF;
-	text-decoration: none;
 }
 
 p.post-notice,
@@ -2385,16 +2343,25 @@ li.notification-reported strong, li.notification-disapproved strong {
 /* Top-bar (custom)
 --------------------------------------------- */
 #top-bar {
-	background: url("./images/bar-bg.jpg") no-repeat scroll 50% 100% #002540;
-	border-bottom: 1px solid #05517E;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
+	border-bottom: 1px solid #010203;
+	border-color: rgba(255, 255, 255, 0.07);
+	border-image: none;
+	border-style: solid;
+	border-width: 0 0 1px;
+	color: white;
+	height: 44px;
+	line-height: 20px;
+	transform: translate3d(0px, 0px, 0px);
+	width: 100%;
+	font-family: "Trebuchet MS",Arial,sans-serif;
+	color: #DCDCDC;
+	font-size: 17px;
 	box-shadow: 0 0 3px 3px #000000;
-	font-family: Arial, sans-serif;
-	font-size: 13px;
-	line-height: 40px;
-	color: #FFF;
 	text-shadow: 1px 1px #000000;
 	position: relative;
-	z-index: 1;
+	z-index: 9999;
 }
 
 #top-bar > .inner {
@@ -2403,33 +2370,48 @@ li.notification-reported strong, li.notification-disapproved strong {
 	height: 40px;
 	margin: 0 auto;
 	max-width: 990px;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 #top-bar .linklist > li {
-	border-left: 2px solid #042E45;
-	border-right: 1px solid #011323;
+	border-left: 1px solid #33373b;
+	border-right-color: #1A1A1A;
 	margin: 0;
-	padding: 0 15px;
-	font-size: inherit;
-	line-height: inherit;
+	padding-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 0;
+	font-size: 15px;
+	margin: 5px;
+	list-style-type: none;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#top-bar .linklist > li.hover {
+	background: #666;
 }
 
 #top-bar .linklist > li.link {
 	padding: 0;
+	transition: text-shadow 160ms ease 0s, color 160ms ease 0s;
 }
 
 #top-bar .linklist > li.link > a {
+	color: rgba(255, 255, 255, 0.7);
 	padding: 0 15px !important;
 	display: block;
+	cursor: pointer;
 	font-weight: bold;
 }
 
 #top-bar .linklist > li.link > a:hover {
-	background-color: rgba(255, 255, 255, 0.05);
-	text-shadow: 0 0 7px rgba(255, 255, 255, 0.4);
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+	color: #fff;
 }
+
 
 #top-bar li.responsive-menu {
 	border: none !important;
@@ -2438,27 +2420,7 @@ li.notification-reported strong, li.notification-disapproved strong {
 	padding: 3px;
 }
 
-/* Adjust the background (and videos) if top-bar is active */
-body.topbar {
-	background-position: 49.999% 41px;
-}
 
-body.topbar-fixed #top-bar {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index: 40;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateZ(0);
-}
-
-body.topbar-fixed #wrap {
-	margin-top: 41px;
-}
-
-body.topbar .navblock {
-	margin-top: 1px;
-}
 
 /* Miscellaneous styles
 --------------------------------------------- */
@@ -2857,7 +2819,7 @@ body.pbwow3 #page-body:before {
 	.forum-blocks li.row,
 	.index-left .forum-blocks li.row {
 		width: 100%;
-		min-height: inherit;
+		min-height: 60px;
 	}
 
 	.forum-blocks li.row dl {

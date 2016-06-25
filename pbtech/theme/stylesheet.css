@@ -170,7 +170,7 @@ hr {
 	background: url("./images/bg-sides.png") repeat-x scroll 50% 100%;
 	border-radius: 0;
 	color: #858084;
-	padding: 10px 0;
+	padding: 18px 0;
 }
 
 #page-header .navbar ul.linklist {
@@ -1146,46 +1146,11 @@ body.section-viewtopic div.rules > .inner {
 	padding: 0;
 }
 
-div.rules strong {
-	background: #732e03;
-	border: none;
-	border-radius: 5px 5px 0 0;
-	color: #FFF;
-	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
-	padding: 5px;
-	box-shadow: none;
-}
-
-div.rules-link {
-	text-align: center;
-	background: none !important;
-}
-div.rules-link a {
-	display: inline-block;
-	background-color: #732e03;
-	background-image: linear-gradient(#5d0a01,#732e03);
-	box-shadow: 0 2px 7px rgba(0,0,0,0.2);
-	border: 1px solid #732e03;
-	border-radius: 6px;
-	padding: 0.5em 1.5em;
-	color: #FFF;
-	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
-	font-size: 16px;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-	vertical-align: middle;
-}
-div.rules-link a:hover {
-	background-color: #f3a900;
-	background-image: linear-gradient(#f3a900,#d07b01);
-	text-decoration: none;
-	border: 1px solid #ffb674;
-}
-
 .postbody div.rules {
 	padding: 6px 10px;
 }
 
-/*p.rules {
+p.rules {
 	background: #060b10;
 	background-color: rgba(0,0,0,0.2);
 	background-image: linear-gradient(to right, rgba(255,0,40,0) 0%, rgba(255,0,40,1) 50%, rgba(255,0,40,0) 100%), linear-gradient(to right, rgba(255,0,40,0) 0%, rgba(255,0,40,1) 50%, rgba(255,0,40,0) 100%);
@@ -1198,7 +1163,8 @@ div.rules-link a:hover {
 	padding: 10px;
 	padding: 1rem;
 	box-shadow: 0 0 7px 0 rgba(0,0,0,0.4);
-}*/
+}
+
 #information {
 	text-align: center;
 	padding: 10px !important;
@@ -1324,30 +1290,6 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 }
 
 .profile-context .user-icons a:hover:before {
-	color: #FFF;
-}
-
-/* Top-bar
---------------------------------------------- */
-#top-bar {
-	background: #262729;
-	background: linear-gradient(#2A3035, #262729);
-}
-
-#top-bar > .inner {
-	border-left-color: #1A1A1A;
-	border-right: 1px solid #33373b;
-}
-
-#top-bar .linklist > li {
-	border-left: 1px solid #33373b;
-	border-right-color: #1A1A1A;
-}
-
-#top-bar .linklist > li.link > a {
-	color: #00b6ff;
-}
-#top-bar .linklist > li.link > a:hover {
 	color: #FFF;
 }
 
