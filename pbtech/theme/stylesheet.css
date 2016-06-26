@@ -594,6 +594,16 @@ fieldset.polls dl.voted {
 	box-sizing: inherit;
 }
 
+.vote-submitted {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	display: none;
+}
+
+
 /* Content container styles
 --------------------------------------------- */
 .postprofile,
@@ -1358,7 +1368,7 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 	margin: 0 auto;
 	max-width: 990px;
 	box-sizing: border-box;
-	padding-left: 40px;
+	padding-left: 0px;
 	padding-right: 40px;
 }
 
