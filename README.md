@@ -1,7 +1,7 @@
 PBTech Style for phpBB 3.1.9
 ============
 
-![Screenshot](screenshot.png)
+![Screenshot](/contrib/screenshot.png)
 
 This style was inspired by the Battlenet forums 2015. example
 http://web.archive.org/web/20141207163104/http://us.battle.net/en/forum/topic/10423582376
