@@ -445,7 +445,7 @@ table.table1 tbody .big-column td {
 .postprofile .avatar {
 	background: none;
 	background: url("./images/avatar-tr.png") 100% 0 no-repeat, url("./images/avatar-bl.png") 0 100% no-repeat;
-	margin-top: 5px;
+	margin-top: 0px;
 	padding: 5px;
 	width: auto;
 	height: auto;

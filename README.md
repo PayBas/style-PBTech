@@ -40,6 +40,9 @@ For more information and support, we suggest you visit
 
 ### Changes
 
+3.0.8.2 (05-11-2016)
+- fix top margin of avatar
+
 3.0.8.1 (26-6-2016)
 - new design for Polls
 - new design for Top bar
