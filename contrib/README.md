@@ -40,6 +40,9 @@ For more information and support, we suggest you visit
 
 ### Changes
 
+3.1.10 (05-11-2016)
+- updated for phpbb 3.1.10
+
 3.0.8.2 (05-11-2016)
 - fix top margin of avatar
 
