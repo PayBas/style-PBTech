@@ -10,3 +10,46 @@ body {
 #wrap {
     background: #D3D1CE;
 }
+
+/* Headings */
+h1 {
+    margin-top: 100px;
+    color: #000;
+}
+
+h2 {
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    margin-top: 0.5em;
+    background: url("./images/category-shadow.png") no-repeat 0 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #172040;
+}
+
+h2 a { color: #074E79; }
+h2 a:hover { color: #0295EE; text-decoration: none; }
+h2 a:active { color: #00C0FF; }
+h2.solo { margin-bottom: 0.5em; }
+
+.content h2, .panel h2 {
+    color: #074e79;
+    background: none;
+    border-bottom-color: #3380C8;
+}
+
+h3 {
+    border-bottom: 1px solid #444;
+    color: #0080b2;
+    border-color: rgba(29, 63, 98, 0.5);
+}
+h3 a:hover { text-decoration: none; }
+
+.pm .postbody h3.first {
+    font-size: 1.6em;
+    color: #0080b2;
+}
+
+hr {
+    border-top-color: #444;
+    border-color: #b5b3b2;
+}
