@@ -53,3 +53,269 @@ hr {
     border-top-color: #444;
     border-color: #b5b3b2;
 }
+
+/* Content container styles
+--------------------------------------------- */
+.content h2, .panel h2 {
+    color: #00C0FF;
+    border-bottom: 1px solid #666;
+}
+
+.postbody h3 {
+    font-size: 1.2em;
+}
+
+.postbody h3.first {
+    font-size: 1.3em;
+}
+
+.post:target h3 a {
+    color: #FFF;
+}
+
+.post:target .content {
+    color: #DDD;
+}
+
+.post .postbody h3,
+.post p.author {
+    margin-left: 10px !important; /* TODO check */
+}
+
+
+.postprofile,
+.postbody,
+.content,
+blockquote { color: #4A4A4A; text-shadow: none; }
+
+.postprofile strong { color: #0072a3; }
+
+.post:target {
+    border: 1px solid #d8d8d8;
+}
+
+.post:target .content {
+    color: #000;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+
+
+blockquote {
+    background-color: rgba(10, 10, 10, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 30%);
+    border-color: #575757;
+    color: #CCCCCC;
+    padding: 6px 10px 10px 10px;
+    position: relative;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+blockquote {
+    background: rgba(67, 67, 67, 0.12);
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+blockquote:before, blockquote:after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    position: absolute;
+    opacity: 0.3;
+}
+
+blockquote:before {
+    content: "\f10d";
+    left: 3px;
+    top: 2px;
+}
+
+blockquote:after {
+    content: "\f10e";
+    right: 3px;
+    bottom: 2px;
+}
+
+.signature, .notice {
+    border-top-color: #555;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.signature, .notice {
+    border-top-color: rgba(200, 200, 200, 0.6);
+}
+
+.signature {
+    opacity: 0.7;
+}
+
+/* Code block */
+.codebox, code.inline {
+    background: linear-gradient(to bottom, #cacac7 0%, #C8C8C8 60%);
+    border-color: transparent;
+    box-shadow: none;
+    color: #35B92F;
+}
+
+.codebox code {
+    color: #35B92F;
+    text-align: left;
+    max-height: 400px;
+}
+
+.codebox p {
+    border-color: #999;
+    border-bottom-color: #afafaf;
+}
+
+dl.codebox {
+    background-color: rgba(28, 40, 100, 0.2);
+}
+
+.codebox {
+    background-color: rgba(10, 10, 10, 0.3);
+    text-shadow: none;
+}
+
+.syntaxbg { color: #000C18; }
+.syntaxcomment { color: #5a545c; }
+.syntaxdefault { color: #435f9f; }
+.syntaxkeyword { color: #171e2d; }
+.syntaxstring { color: #930c06; }
+.syntaxhtml { color: #AAA; }
+
+code.inline {
+    background-color: rgba(10, 10, 10, 0.3);
+    border: 1px solid rgba(88, 88, 88, 0.7);
+    border-radius: 2px;
+    color: #209347;
+    display: inline;
+    font-family: Monaco, 'Andale Mono', 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    font-style: normal;
+    line-height: 1.3em;
+    padding: 0 3px;
+}
+
+
+/* Attachments
+----------------------------------------*/
+.attachbox {
+    background-color: rgba(10, 10, 10, 0.3);
+    border-color: #7C7C7C;
+    margin: 10px;
+}
+
+.attachbox {
+    background: rgba(67, 67, 67, 0.12);
+}
+
+.attachbox dd {
+    border-top-color: #575757;
+}
+
+.attachbox p {
+    /*color: #999;*/
+}
+
+.attachbox p.stats {
+    /*color: #999;*/
+}
+
+.pm-message .attachbox {
+    background-color: #333;
+}
+
+.attach-image img {
+    border-color: #444;
+}
+
+.inline-attachment {
+    /* TODO */
+}
+
+
+dl.file dd {
+    color: #999;
+}
+
+dl.file dd {
+    color: #858084;
+}
+
+dl.details dt {
+    color: #DDD;
+}
+
+dl.details dt {
+    color: #7a7a7a;
+}
+
+dl.details dd {
+    color: #AAA;
+}
+
+dl.details dd {
+    color: inherit;
+}
+
+dl.faq dt {
+    color: #FFF;
+}
+
+dl.faq dt {
+    color: #172040;
+}
+
+dl.thumbnail img,
+.content a > img.postimage {
+    background-color: rgba(0, 0, 0, 0.4);
+    /*border: 1px solid #372511 !important;*/
+    border: 1px solid #666 !important; /* !important for lightbox script */
+    border-radius: 5px !important; /* !important for lightbox script */
+    box-shadow: 0 0 6px #000000;
+    padding: 0;
+    transition: border 0.25s ease-out 0s;
+}
+
+dl.thumbnail img,
+.content a > img.postimage {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #888 !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    padding: 0;
+    transition: border 0.25s ease-out 0s;
+}
+
+dl.thumbnail dt a:hover {
+    background-color: #222222;
+}
+
+dl.thumbnail dt a:hover,
+.content a > img.postimage:hover {
+    background: none;
+}
+
+dl.thumbnail dt a:hover img,
+.content a > img.postimage:hover {
+    border: 1px solid #CD9000 !important; /* !important for lightbox script */
+}
+
+dl.thumbnail dt a:hover img,
+.content a > img.postimage:hover {
+    border: 3px solid #00b6ff !important;
+}
+
+.posthilit {
+    background-color: #CCC;
+    color: #000;
+    text-shadow: none;
+}
