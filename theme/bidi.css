@@ -172,10 +172,27 @@
 	margin-left: 0;
 }
 
+.rtl .search-header {
+	background: url("./images/search-bar-rtl.gif") no-repeat;
+	right: auto;
+	left: 10px;
+}
+
 .rtl .search-header .inputbox,
 .rtl .search-header button.search-icon {
 	float: left;
 }
+
+.rtl .search-header button.search-icon {
+	left: 0;
+	right: auto;
+}
+
+.rtl .search-header .inputbox {
+	padding: 7px 20px 7px 0 !important;
+	float: right !important;
+}
+
 
 /* Collapseable blocks
 --------------------------------------------- */
@@ -191,6 +208,10 @@
 	margin-right: 0;
 }
 
+.rtl .collapse-box h2 a[href="#"]:before,
+.rtl .stat-block h3 a[href="#"]:before {
+	float: left;
+}
 /* Drop-down menus
 --------------------------------------------- */
 .rtl .dropdown li {
