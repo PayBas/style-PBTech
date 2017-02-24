@@ -66,8 +66,7 @@ a.forumtitle:active,	.forumbg .header a:active,	.forabg .header a:active, 	th a:
 
 /* Post body links */
 .postlink {
-    border-bottom: 1px dotted;
-    border-bottom-color: #2f7899;
+    border-bottom: 1px dotted #2f7899;
     color: #074e79;
 }
 .postlink:active {

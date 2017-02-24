@@ -50,7 +50,6 @@ h3 a:hover { text-decoration: none; }
 }
 
 hr {
-    border-top-color: #444;
     border-color: #b5b3b2;
 }
 
@@ -104,8 +103,7 @@ blockquote { color: #4A4A4A; text-shadow: none; }
 
 
 blockquote {
-    background-color: rgba(10, 10, 10, 0.2);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 30%);
+    background: rgba(10, 10, 10, 0.2) linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 30%);
     border-color: #575757;
     color: #CCCCCC;
     padding: 6px 10px 10px 10px;

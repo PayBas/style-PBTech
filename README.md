@@ -40,10 +40,17 @@ For more information and support, we suggest you visit
 
 ### Changes
 
-3.1.10.1 (15-12-2016)
+3.0.12 (21-02-2017)
+- stylesheet.css refactored into separate files
+- pbwow.css merged to other css files
+
+3.0.11.1 (21-02-2017)
 - style validation fix.
 
-3.1.10 (05-11-2016)
+3.0.11 (15-12-2016)
+- style validation fix.
+
+3.0.9 (05-11-2016)
 - updated for phpbb 3.1.10
 
 3.0.8.2 (05-11-2016)
