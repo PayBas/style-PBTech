@@ -423,7 +423,8 @@ table.table1,
     top: 15px;
     height: 35px;
     width: 35px;
-    background: no-repeat 50% 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .forum-blocks dl .list-inner {

@@ -3,10 +3,7 @@
 .panel-container .panel {
     background: #212121;
     background: rgba(40, 40, 40, 0.7) linear-gradient(to top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 46px);
-}
-
-.panel-container .panel {
-    background: #FCFBFA;
+        background: #FCFBFA;
 }
 
 #cp-main .pm {

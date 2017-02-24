@@ -31,18 +31,17 @@ h2 a:hover { color: #0295EE; text-decoration: none; }
 h2 a:active { color: #00C0FF; }
 h2.solo { margin-bottom: 0.5em; }
 
-.content h2, .panel h2 {
-    color: #074e79;
-    background: none;
-    border-bottom-color: #3380C8;
-}
 
 h3 {
     border-bottom: 1px solid #444;
     color: #0080b2;
     border-color: rgba(29, 63, 98, 0.5);
 }
-h3 a:hover { text-decoration: none; }
+
+h3 a:hover
+{
+    text-decoration: none;
+}
 
 .pm .postbody h3.first {
     font-size: 1.6em;
@@ -56,8 +55,9 @@ hr {
 /* Content container styles
 --------------------------------------------- */
 .content h2, .panel h2 {
-    color: #00C0FF;
-    border-bottom: 1px solid #666;
+    color: #074e79;
+    background: none;
+    border-bottom-color: #3380C8;
 }
 
 .postbody h3 {
@@ -81,11 +81,13 @@ hr {
     margin-left: 10px !important; /* TODO check */
 }
 
-
 .postprofile,
 .postbody,
 .content,
-blockquote { color: #4A4A4A; text-shadow: none; }
+blockquote {
+    color: #4A4A4A;
+    text-shadow: none;
+}
 
 .postprofile strong { color: #0072a3; }
 
