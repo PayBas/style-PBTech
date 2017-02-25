@@ -1,0 +1,204 @@
+/* Buttons
+--------------------------------------------- */
+.button {
+    background: #0081b4;
+    background: linear-gradient(rgba(0, 129, 180, 1), rgba(0, 106, 155, 1));
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: auto;
+    line-height: 30px;
+    padding: 0 12px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.dropdown-select {
+    padding-right: 5px;
+}
+
+.button:hover,
+.button:active,
+.dropdown-visible .dropdown-select,
+.dropdown-visible .dropdown-select:hover,
+.nojs .dropdown-container:hover .dropdown-select {
+    background: #009EE2 linear-gradient(to bottom, #37dfff 0%, #1041e2 100%);
+    border-color: #112E62;
+    color: #FFF;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon-button:before {
+    background: none;
+    content: none;
+    height: auto;
+    width: auto;
+}
+
+.icon-button:after,
+.dropdown-select:before,
+.dropdown-select:after {
+    background: none;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 5px;
+    right: auto;
+    left: auto;
+    top: auto;
+    float: none;
+    font-family: FontAwesome;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: inherit;
+    text-decoration: none;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-button.dropdown-select {
+    font-size: 0;
+    padding: 0 5px 0 8px;
+}
+
+.icon-button.dropdown-select:before {
+    margin: 0 3px 0 1px;
+    width: auto;
+    height: auto;
+}
+
+.dropdown-select:after {
+    border-color: #5D5D5D;
+    content: "\f0d7";
+    font-size: 12px;
+    height: 100%;
+    padding-left: 3px;
+    text-align: center;
+    transition: border 0.2s;
+}
+
+.dropdown-select:after,
+.dropdown-select:hover:after,
+.dropdown-visible .dropdown-select:after,
+.nojs .dropdown-container:hover .dropdown-select:after {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.post-buttons .icon-button {
+    color: #4d606d;
+}
+
+.post-buttons .icon-button:before {
+    text-shadow: none;
+}
+
+.post-buttons .icon-button:hover:before {
+    color: #565656;
+}
+
+/* Icon images
+--------------------------------------------- */
+.small-icon {
+    background: none !important;
+    padding: 0;
+    position: relative;
+}
+
+.small-icon > a {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.small-icon > a:before,
+#top-bar .small-icon:before,
+.profile-context .user-icons a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    color: #888;
+    text-shadow: 0 0 5px #000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: inherit;
+    text-decoration: none;
+    padding-right: 3px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.small-icon > a:before,
+#page-footer li.breadcrumbs:before {
+    color: #9DBECB;
+}
+
+.small-icon > a:hover:before {
+    color: #FFF;
+    text-shadow: 0 0 16px #009CFF;
+}
+
+.small-icon > a:hover:before {
+    /*text-shadow: 0 0 16px #C920C7;*/
+}
+
+
+.dropdown-contents .small-icon > a:before {
+    width: 1.28571em;
+    text-align: center;
+}
+
+
+#top-bar .small-icon:before,
+#top-bar .small-icon.link > a:before {
+    color: inherit;
+    padding-right: 5px;
+}
+
+/* Post control buttons */
+.post-buttons .icon-button {
+    background: none !important;
+    border: none;
+    box-shadow: none !important;
+    line-height: inherit;
+    padding: 0 3px;
+    height: auto;
+    width: auto;
+}
+
+.post-buttons .icon-button:before {
+    font-family: FontAwesome;
+    text-shadow: 0 0 5px #000;
+    font-size: 1.3em;
+    line-height: inherit;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.post-buttons .icon-button:hover:before {
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.post-buttons .dropdown li a:before {
+    content: "";
+    display: none;
+}
+
+/* Profile & navigation icons */
+.contact-icon { background-image: url("./images/icons/icons_contact.png"); }
+
+.profile-context .user-icons a:before {
+    display: none;
+    font-size: 16px;
+}

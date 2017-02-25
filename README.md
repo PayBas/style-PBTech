@@ -1,4 +1,4 @@
-PBTech Style for phpBB 3.1.9
+PBTech Style for phpBB 3.1.10
 ============
 
 ![Screenshot](/contrib/screenshot.png)
@@ -7,8 +7,8 @@ This style was inspired by the Battlenet forums 2015. example
 http://web.archive.org/web/20141207163104/http://us.battle.net/en/forum/topic/10423582376
 
 #### Requirements
-- phpBB 3.1.x
-- prosilver 3.1.x
+- phpBB 3.1.10
+- prosilver
 
 #### Important notes
 - prosilver needs to be installed. PBTech should inherit from it (as a child of prosilver, check your ACP to be sure).
@@ -34,13 +34,23 @@ Change the `xxx` to the "route" of your custom page
 
 ### Support
 
-For more information and support, we suggest you visit 
+For more information and support, we suggest you visit
 - [PBWoW.com] (http://pbwow.com/forum/) (is down)
 - [avathar.be] (http://www.avathar.be/bbdkp/viewforum.php?f=82)  
 
 ### Changes
 
-3.1.10 (05-11-2016)
+3.0.12 (21-02-2017)
+- stylesheet.css refactored into separate files
+- pbwow.css merged to other css files
+
+3.0.11.1 (21-02-2017)
+- style validation fix.
+
+3.0.11 (15-12-2016)
+- style validation fix.
+
+3.0.9 (05-11-2016)
 - updated for phpbb 3.1.10
 
 3.0.8.2 (05-11-2016)
