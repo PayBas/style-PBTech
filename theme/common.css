@@ -20,7 +20,6 @@ body {
     border-radius: 0;
     margin: 0 auto;
     padding: 0;
-    max-width: 990px;
     max-width: inherit;
 }
 
@@ -48,8 +47,6 @@ body {
 }
 
 #page-body {
-    background: #000;
-    background: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 20px 30px 38px;
     position: relative;
@@ -63,8 +60,8 @@ body {
 }
 
 #page-body:before {
-    content: "";
-    display: block;
+    content: none;
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -78,12 +75,6 @@ body {
 #page-body:after {
     clear: both;
     content: "";
-    display: block;
-}
-
-#page-body:before,
-#page-body:after {
-    content: none;
     display: none;
 }
 
@@ -101,7 +92,6 @@ body {
     background: none;
     border: none;
     border-radius: 0;
-    margin: 0;
     min-height: inherit;
     padding: 0 10px;
     position: relative;
@@ -142,7 +132,6 @@ body {
 }
 
 .forumbg {
-    margin: 5px 1px;
     border-radius: 3px;
     margin: 5px 0 15px;
     background: none;
@@ -316,28 +305,17 @@ table.table1,
 
 #body-header .breadcrumbs .crumb a:hover {
     color: #00577E;
-}
-
-#body-header .breadcrumbs .crumb a:before {
-    border-bottom-color: #363535;
-}
-#body-header .breadcrumbs .crumb a:hover:before {
     border-bottom-color: #00577E;
 }
 
 .breadcrumbs .crumb:before {
     content: '\f054';
-    color: #7C7C7C;
+    color: #00577E;
     font-family: FontAwesome;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: normal;
     padding: 0 0.5em;
     line-height: normal;
-}
-
-.breadcrumbs .crumb:before {
-    font-size: 0.8em;
-    color: #00577E;
 }
 
 .breadcrumbs.locked .crumb:last-child:after {
@@ -376,7 +354,6 @@ table.table1,
     list-style: none;
 }
 
-
 .forum-blocks li.row {
     float: left;
     display: block;
@@ -399,18 +376,17 @@ table.table1,
     position: relative;
     min-height: 110px;
     margin: 2px;
-    padding: 10px 8px;
-    background: #141414;
-    background: rgba(20, 20, 20, 0.8);
-    border: 1px solid #444;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.6);
+    padding: 12px 10px;
+    background: #E5E4E3;
+    border: none;
+    box-shadow: none;
     -moz-box-sizing: border-box;
+    border-radius: 3px;
     box-sizing: border-box;
     overflow: inherit;
     transition: border 0.20s ease-in-out 0s;
 }
 
-.forum-blocks dl,
 .misc-block,
 .stat-block p {
     background: #E5E4E3;
@@ -456,8 +432,7 @@ table.table1,
     top: 15px;
     height: 35px;
     width: 35px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background: no-repeat 50% 50%;
 }
 
 .forum-blocks dl .list-inner {
@@ -489,7 +464,6 @@ table.table1,
     padding: 3px 4px;
 }
 
-
 .forum-blocks dd.forum-stats,
 .forum-blocks dd.redirect,
 .forum-blocks dd.mcp-status,
@@ -503,7 +477,6 @@ table.table1,
     color: #8d929c;
 }
 
-
 .forum-blocks dd.mcp-status {
     bottom: auto;
     top: 0;
@@ -515,9 +488,8 @@ table.table1,
 
 /* Hover states */
 .forum-blocks dl:hover {
-    border-color: #00C0FF;
     background: #FFFFFF;
-    border: none;
+    border: none #00C0FF;
     box-shadow: none;
 }
 
@@ -571,55 +543,43 @@ li.row:hover,
 
 li.row.bg1,
 .panel-container .panel li.row.bg1 {
-    background: #252525;
     background: #252525 linear-gradient(to bottom, rgba(30, 30, 30, 1) 0, rgba(37, 37, 37, 0) 35px);
     border-color: #252525 #000 #000 #252525;
 }
 
 li.row.bg1:hover,
 .panel-container .panel li.row.bg1:hover {
-    background: #252525;
     background: #252525 linear-gradient(to top, rgba(30, 30, 30, 1) 0, rgba(37, 37, 37, 0) 35px);
     color: #FFF;
 }
 
 li.row.bg2,
 .panel-container .panel li.row.bg2 {
-    background: #161616;
     background: #161616 linear-gradient(to bottom, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
     border-color: #161616 #000 #000 #161616;
 }
 
 li.row.bg2:hover,
 .panel-container .panel li.row.bg2:hover {
-    background: #161616;
     background: #161616 linear-gradient(to top, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
     color: #FFF;
 }
 
 li.row.bg3, /* unread notifications */
 .panel-container .panel li.row.bg3 {
-    background: #333;
     background: #333 linear-gradient(to bottom, rgba(40, 40, 40, 1) 0, rgba(51, 51, 51, 0) 35px);
     border-color: #333 #000 #000 #333;
 }
 
-li.row.bg3:hover
+li.row.bg3:hover,
 .panel-container .panel li.row.bg3:hover {
-    background: #333;
     background: #333 linear-gradient(to top, rgba(40, 40, 40, 1) 0, rgba(51, 51, 51, 0) 35px);
-    color: #FFF;
-}
-
-.panel-container li.header {
     color: #FFF;
 }
 
 .panel-container li.header{
     color: #222;
 }
-
-
 
 li.row,
 li.row.bg1,
@@ -741,11 +701,6 @@ dl.icon {
 }
 
 table.table1 thead tr {
-    background: #101010;
-    border: 1px solid #252525;
-}
-
-table.table1 thead tr {
     background: none;
     border: none;
     border-bottom: 1px solid #0080B2; /* TODO color */
@@ -758,13 +713,9 @@ table.table1 thead th {
 .forumbg-table table.table1 thead th {
     font-weight: bold;
 }
-.
-panel-container table.table1 thead th {
-    border: none;
-    color: #FFF;
-}
 
 .panel-container table.table1 thead th {
+    border: none;
     color: #222;
 }
 
@@ -777,65 +728,23 @@ table.table1 tbody th {
 }
 
 table.table1 tbody tr {
-    border-width: 1px 1px 0;
-    border-color: #161616;
+    background: #ECEBEA;
+    border-color: #C5C5C5;
+    border-width: 0 0 1px 0;
 }
 
 table.table1 tbody tr.bg1,
-table.zebra-list tbody tr:nth-child(even) {
-    background: #252525;
-    background: #252525 linear-gradient(to bottom, rgba(30, 30, 30, 1) 0, rgba(37, 37, 37, 0) 35px);
-    border-color: #252525;
-}
-
-table.table1 tbody tr.bg2,
-table.zebra-list tbody tr:nth-child(odd) {
-    background: #161616;
-    background: #161616 linear-gradient(to bottom, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
-    border-color: #161616;
-}
-
-table.table1 tbody tr.bg3 {
-    background: #101010;
-    background: #101010 linear-gradient(to bottom, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
-    border-color: #101010;
-}
-
-table.table1 tbody tr.bg1:hover,
-table.table1 tbody tr.bg1.hover,
-table.zebra-list tbody tr:nth-child(even):hover {
-    background: #252525 linear-gradient(to top, rgba(30, 30, 30, 1) 0, rgba(37, 37, 37, 0) 35px);
-}
-
-table.table1 tbody tr.bg2:hover,
-table.table1 tbody tr.bg2.hover,
-table.zebra-list tbody tr:nth-child(odd):hover {
-    background: #161616 linear-gradient(to top, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
-}
-
-table.table1 tbody tr.bg3:hover,
-table.table1 tbody tr.bg3.hover {
-    background: #101010 linear-gradient(to top, rgba(11, 11, 11, 1) 0, rgba(22, 22, 22, 0) 35px);
-}
-
-table.table1 tbody tr,
-table.table1 tbody tr.bg1,
-table.table1 tbody tr.bg2,
-table.zebra-list tbody tr:nth-child(odd),
 table.zebra-list tbody tr:nth-child(even) {
     background: #ECEBEA;
     border-color: #C5C5C5;
     border-width: 0 0 1px 0;
 }
 
-table.table1 tbody tr:hover, table.table1 tbody tr.hover,
-table.table1 tbody tr.bg1:hover, table.table1 tbody tr.bg1.hover,
-table.table1 tbody tr.bg2:hover, table.table1 tbody tr.bg2.hover,
-table.table1 tbody tr.bg3:hover, table.table1 tbody tr.bg3.hover,
-table.zebra-list tbody tr:nth-child(odd):hover,
-table.zebra-list tbody tr:nth-child(even):hover {
-    background: #E6E6E6;
-    color: #4A4A4A;
+table.table1 tbody tr.bg2,
+table.zebra-list tbody tr:nth-child(odd) {
+    background: #ECEBEA;
+    border-color: #C5C5C5;
+    border-width: 0 0 1px 0;
 }
 
 table.table1 tbody tr.bg3 {
@@ -843,13 +752,29 @@ table.table1 tbody tr.bg3 {
     border-color: #C5C5C5;
 }
 
-table.table1 tbody td {
-    border: none;
+table.table1 tbody tr.bg1:hover,
+table.table1 tbody tr.bg1.hover,
+table.zebra-list tbody tr:nth-child(even):hover {
+    background: #E6E6E6;
+    color: #4A4A4A;
 }
 
-table.table1 tbody tr:hover td,
-table.table1 tbody tr.hover td {
-    color: #FFF;
+table.table1 tbody tr.bg2:hover,
+table.table1 tbody tr.bg2.hover,
+table.zebra-list tbody tr:nth-child(odd):hover {
+    background: #E6E6E6;
+    color: #4A4A4A;
+}
+
+table.table1 tbody tr.bg3:hover,
+table.table1 tbody tr.bg3.hover {
+    background: #E6E6E6;
+    color: #4A4A4A;
+}
+
+
+table.table1 tbody td {
+    border: none;
 }
 
 table.table1 tbody tr:hover td,
@@ -874,9 +799,6 @@ table.info tbody th {
 
 /* Footer
 --------------------------------------------- */
-#page-footer {
-    text-shadow: 1px 1px 1px #000;
-}
 
 #page-footer {
     background: url("./images/bg.jpg") no-repeat scroll 50% 70% #000;
@@ -887,15 +809,7 @@ table.info tbody th {
 
 #page-footer .navbar {
     border-radius: 0;
-    padding: 0 15px;
-}
-
-#page-footer .navbar {
     padding: 0 10px;
-}
-
-.copyright {
-    color: #555;
 }
 
 .copyright {
@@ -905,10 +819,6 @@ table.info tbody th {
 /* Pagination
 --------------------------------------------- */
 .action-bar {
-    margin: 6px 3px;
-}
-
-.action-bar {
     margin: 12px 3px;
 }
 
@@ -917,9 +827,10 @@ table.info tbody th {
 }
 
 .pagination li a {
-    color: #CCC;
-    background-color: #1A1A1A;
-    border-color: #575757;
+    color: #CECECE;
+    background: #333;
+    background: linear-gradient(#333, #505050);
+    border-color: transparent;
 }
 
 .pagination li a,
@@ -928,17 +839,6 @@ table.info tbody th {
     background: linear-gradient(#333, #505050);
     border-color: transparent;
     color: #CECECE;
-}
-
-.pagination li a:hover,
-.pagination .active a:hover,
-.pagination .dropdown-visible a.dropdown-trigger,
-.nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-    border-color: #FFF;
-    background-color: #000;
-    color: #FFF;
-    text-decoration: none;
-    box-shadow: 0 0 5px 1px rgba(0, 192, 255, 0.7);
 }
 
 .pagination li a:hover,
@@ -954,23 +854,9 @@ table.info tbody th {
 }
 
 .pagination li.active span {
-    color: #FFFFFF;
-    background-color: #0D1A2D;
-    border-color: #B28910;
-}
-
-.pagination li.active span {
     background-color: #0080B2;
     border-color: transparent;
     color: #FFFFFF;
-}
-
-.pagination li.active span:hover {
-    background-color: #FFB019;
-    border-color: #FFB019;
-    color: #000;
-    text-decoration: none;
-    box-shadow: none;
 }
 
 .pagination li.active span:hover {
@@ -981,13 +867,10 @@ table.info tbody th {
     box-shadow: none;
 }
 
-.row .pagination {
-    background: url("./images/icons/icon_pages.png") 0 50% no-repeat;
-    font-size: 10px;
-}
 
 .row .pagination {
     background-image: url("./images/icons/icon_pages.gif");
+    font-size: 10px;
 }
 
 .pagination li.page-jump a, .pagination li.next a, .pagination li.previous a {
@@ -1069,8 +952,6 @@ body.section-viewtopic div.rules {
     background-color: rgba(0,0,0,0.09);
     background-size: 100% 2px, 100% 2px;
     background-position: 0 0, 0 100%;
-
-
     background: rgba(19,19,19,0.14);
     background: -moz-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19,19,19,0.14)), color-stop(100%, rgba(214,210,214,0.14)));
@@ -1079,23 +960,18 @@ body.section-viewtopic div.rules {
     background: -ms-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
     background: linear-gradient(to bottom, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#d6d2d6', GradientType=0 );
-
-
     background-repeat: no-repeat;
-
     border: none;
     border-radius: 5px;
     color: inherit;
     margin: 10px 0;
-    padding: 10px;
     padding: 1rem;
     box-shadow: none;
 }
 
 body.section-viewforum div.rules > .inner,
 body.section-viewtopic div.rules > .inner {
-    background-color: #313131;
-    background: linear-gradient(to bottom, rgba(23, 23, 23, 1) 0, rgba(49, 49, 49, 0) 82px), linear-gradient(to top, rgba(26, 26, 26, 1) 0, rgba(49, 49, 49, 0) 46px), #313131;
+    background: #313131 linear-gradient(to bottom, rgba(23, 23, 23, 1) 0, rgba(49, 49, 49, 0) 82px) linear-gradient(to top, rgba(26, 26, 26, 1) 0, rgba(49, 49, 49, 0) 46px);
     border: 1px solid #000;
     padding: 10px;
 }
@@ -1290,15 +1166,8 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before {
 }
 
 .dropdown-extended ul li.bg2 {
-    background: #333;
     background: #333 linear-gradient(to bottom, rgba(40, 40, 40, 1) 0, rgba(51, 51, 51, 0) 35px);
-}
-
-.dropdown-extended ul li.bg2 {
     background: #e3e7e9;
-}
-.dropdown-extended ul li:hover {
-    background: #111;
 }
 
 .dropdown-extended ul li:hover {
