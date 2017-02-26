@@ -1,0 +1,282 @@
+/* CP common
+--------------------------------------------- */
+.panel-container .panel {
+    background: #FCFBFA;
+}
+
+#cp-main .pm {
+    background: #212121;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 46px);
+    border: 1px solid #444;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.6);
+    margin-right: 0;
+}
+
+.cp-mini {
+    background: #212121;
+    background: rgba(33, 33, 33, 0.75);
+    border: 1px solid #444;
+    border-radius: 0;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+#cp-main .pm,
+.cp-mini {
+    background: #FCFBFA;
+    border-color: #cac9c8;
+    border-width: 0 0 1px 0;
+    box-shadow: none;
+}
+
+dl.mini dt {
+    color: #888888;
+}
+
+.pmlist li.row {
+    position: relative;
+    padding: 0 0 0 4px;
+}
+
+.pmlist li.row:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 4px solid transparent;
+}
+
+.pmlist li.pm_message_reported_colour:before, .pm_message_reported_colour 	{ border-left-color: #BC2A4D; }
+.pmlist li.pm_marked_colour:before, .pm_marked_colour 						{ border-left-color: #FF6600; }
+.pmlist li.pm_replied_colour:before, .pm_replied_colour 					{ border-left-color: #A9B8C2; }
+.pmlist li.pm_friend_colour:before, .pm_friend_colour 						{ border-left-color: #5CFF00; }
+.pmlist li.pm_foe_colour:before, .pm_foe_colour 							{ border-left-color: #AA1111; }
+
+
+#cp-main h3, #cp-main hr, #cp-menu hr {
+    border-color: rgba(29,63,98,0.5);
+}
+
+.panel-container hr,
+#cp-menu hr {
+    border-color: #444;
+}
+
+.panel-container h3,
+.panel-container hr,
+#cp-menu hr {
+    border-color: rgba(0,156,255,0.3);
+}
+
+
+#gallery label {
+    background-color: #161616;
+    border: 1px solid #444;
+    min-height: 102px;
+}
+
+#gallery label {
+    background-color: #ECEBEA;
+    border-color: #CAC9C8;
+}
+
+#gallery label:hover {
+    background-color: #040D1A;
+    border-color: #00C0FF;
+}
+
+#gallery label:hover {
+    background-color: #FFF;
+    border-color: #0295EE;
+}
+
+/* PM Message history */
+.current {
+    color: #FFF;
+}
+/* PM Message history */
+.current {
+    color: #000;
+}
+
+/* UCP/MCP Tabs
+--------------------------------------------- */
+#tabs .tab > a {
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+    border: 1px solid #222;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    color: #999;
+    margin: 2px 2px 0 0;
+    padding: 6px 10px;
+}
+
+#tabs .tab > a {
+    background: #E3E1DE;
+    background: linear-gradient(#ecebea, #E3E1DE);
+    border-color: #ecebea;
+    color: #074e79;
+}
+
+#tabs .tab > a:hover {
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+    border-color: #555;
+    color: #FFF;
+}
+
+#tabs .tab > a:hover {
+    background: #ECEBEA;
+    background: linear-gradient(#e3e1de, #ECEBEA);
+    border-color: #ecebea;
+    color: #0295ee;
+}
+
+#tabs .activetab > a {
+    background: #111;
+    background: rgba(20, 20, 20, 0.7);
+    border-color: #444;
+    border-bottom: 1px solid #0e0e0e;
+    color: #FFF;
+    margin-bottom: -1px;
+    margin-top: 0;
+    padding: 7px 10px;
+}
+
+#tabs .activetab > a {
+    background: #ECEBEA;
+    border-color: #ECEBEA;
+    color: #0080B2;
+}
+
+#tabs .activetab > a:hover {
+    color: #00C0FF;
+    border-bottom-color: #0e0e0e;
+}
+
+#tabs .activetab > a:hover {
+    background: #ECEBEA;
+    color: #00B6FF;
+}
+
+#minitabs .tab > a {
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+    border: 1px solid #222;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    margin: 2px 0 0 2px;
+    padding: 6px 10px;
+}
+
+#minitabs .tab > a {
+    background: #ECEBEA;
+    background: linear-gradient(#FCFBFA, #ECEBEA);
+    border-color: #FCFBFA;
+}
+
+#minitabs .tab > a:hover {
+    text-decoration: none;
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+    border-color: #555;
+}
+
+#minitabs .tab > a:hover {
+    background: #FCFBFA;
+    background: linear-gradient(#ECEBEA, #FCFBFA);
+    border-color: #FCFBFA;
+    text-decoration: none;
+}
+
+#minitabs .activetab > a {
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7);
+    border-color: #444;
+    border-bottom: 1px solid #202020;
+    color: #FFF;
+    margin-bottom: -1px;
+    margin-top: 0;
+    padding: 7px 10px;
+}
+
+#minitabs .activetab > a {
+    background: #FCFBFA;
+    border-color: #FCFBFA;
+    color: #0080b2;
+}
+
+#minitabs .activetab > a:hover {
+    background: #1a1a1a;
+    background: rgba(40, 40, 40, 0.7);
+    color: #00C0FF;
+    border-bottom-color: #202020;
+}
+
+#minitabs .activetab > a:hover {
+    background: #FCFBFA;
+    color: #0295ee;
+}
+
+.responsive-tab .responsive-tab-link:before {
+    left: auto;
+    border-color: #999999;
+}
+
+/* UCP navigation menu
+--------------------------------------------- */
+#navigation a {
+    color: #999;
+    background: #212121;
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to left, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100px);
+    border: 1px solid #222;
+    border-right: none;
+}
+
+#navigation a {
+    background: #ECEBEA;
+    background: linear-gradient(to left, #ECEBEA, #FCFBFA);
+    border-color: #FCFBFA;
+    color: #5d5d5d;
+}
+
+.rtl #navigation a { /* Do it here instead of bidi.css, so it's easier to overrule by children) */
+    background: rgba(40, 40, 40, 0.7) linear-gradient(to right, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100px);
+}
+
+.rtl #navigation a {
+    background: linear-gradient(to right, #ECEBEA, #FCFBFA);
+}
+
+#navigation a:hover {
+    background: #212121;
+    text-decoration: none;
+    color: #00C0FF;
+}
+
+
+#navigation a:hover {
+    background: #FCFBFA;
+    color: #0295ee;
+}
+
+#navigation #active-subsection a {
+    background: #212121;
+    background-image: none;
+    display: block;
+    color: #FFF;
+}
+
+#navigation #active-subsection a {
+    background: #FCFBFA;
+    color: #074e79;
+}
+
+#navigation #active-subsection a:hover {
+    color: #00C0FF;
+}
+
+#navigation #active-subsection a:hover {
+    color: #0295ee;
+}
