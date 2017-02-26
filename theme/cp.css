@@ -1,11 +1,6 @@
 /* CP common
 --------------------------------------------- */
 .panel-container .panel {
-    background: #212121;
-    background: rgba(40, 40, 40, 0.7) linear-gradient(to top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0) 46px);
-}
-
-.panel-container .panel {
     background: #FCFBFA;
 }
 
@@ -35,14 +30,6 @@
 
 dl.mini dt {
     color: #888888;
-}
-
-ul.cplist {
-    background: linear-gradient(to top, rgba(13, 13, 13, 1) 0, rgba(27, 27, 27, 0) 46px);
-    border: 1px solid #575757;
-    box-shadow: 0 0 0 1px #000;
-    padding: 3px;
-    margin-bottom: 8px;
 }
 
 .pmlist li.row {
