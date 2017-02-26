@@ -94,17 +94,7 @@
     border-color: rgba(0, 0, 0, 0.15);
 }
 
-.post-buttons .icon-button {
-    color: #4d606d;
-}
 
-.post-buttons .icon-button:before {
-    text-shadow: none;
-}
-
-.post-buttons .icon-button:hover:before {
-    color: #565656;
-}
 
 /* Icon images
 --------------------------------------------- */
@@ -118,6 +108,7 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
 
 
 .small-icon > a:before,
@@ -135,6 +126,12 @@
     padding-right: 3px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+#top-bar .small-icon:before,
+#top-bar .small-icon.link > a:before {
+    color: inherit;
+    padding-right: 5px;
 }
 
 .small-icon > a:before,
@@ -158,11 +155,7 @@
 }
 
 
-#top-bar .small-icon:before,
-#top-bar .small-icon.link > a:before {
-    color: inherit;
-    padding-right: 5px;
-}
+
 
 /* Post control buttons */
 .post-buttons .icon-button {
@@ -173,21 +166,22 @@
     padding: 0 3px;
     height: auto;
     width: auto;
+    color: #4d606d;
 }
 
 .post-buttons .icon-button:before {
     font-family: FontAwesome;
-    text-shadow: 0 0 5px #000;
     font-size: 1.3em;
     line-height: inherit;
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-shadow: none;
 }
 
 .post-buttons .icon-button:hover:before {
-    color: #FFF;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: #565656;
 }
 
 .post-buttons .dropdown li a:before {
