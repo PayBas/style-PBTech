@@ -278,9 +278,8 @@ h2.pages-title {
 }
 
 #quick-login-panel dd.input-link {
-	margin: 0 auto;
 	text-align: center;
-	margin-top: 5px;
+	margin: 5px auto 0;
 }
 
 #quick-login-panel dt {
@@ -799,8 +798,7 @@ ul.menu li {
 /* Board Announcements
 --------------------------------------------- */
 #phpbb_announcement {
-	background-color: #d07b01;
-	background-image: linear-gradient(#d07b01, #f3a900);
+	background: #d07b01 linear-gradient(#d07b01, #f3a900);
 	border: none;
 	border-radius: 5px;
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);

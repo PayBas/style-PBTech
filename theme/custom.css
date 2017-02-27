@@ -6,14 +6,6 @@ Some defaults are included, like on PBWoW.com
 Get all the FontAwesome CSS codes here: https://fortawesome.github.io/Font-Awesome/icons/
 
 */
-
-#logo {
-	background: url("./images/logo.png") no-repeat 50% 0;
-	width: 308px;
-	height: 92px;
-	margin: 10px 0;
-}
-
 /* Top-bar links
  * (example of how to apply custom icons to elements in the top-bar)
 --------------------------------------------- */

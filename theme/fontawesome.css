@@ -1,0 +1,77 @@
+/* fonts
+--------------------------------------------- */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');
+    src: url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'),
+    url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'),
+    url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'),
+    url('//netdna.bootstrapcdn.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Buttons
+--------------------------------------------- */
+.icon-acp > a:before 				{ content: "\f085"; }
+.icon-boardrules > a:before 		{ content: "\f03a"; }
+.icon-bookmark > a:before 			{ content: "\f02e"; }
+.icon-bump > a:before 				{ content: "\f102"; }
+.icon-contact > a:before 			{ content: "\f003"; }
+.icon-delete-cookies > a:before 	{ content: "\f1f8"; }
+.icon-download > a:before 			{ content: "\f019"; }
+.icon-faq > a:before 				{ content: "\f059"; }
+.icon-home > a:before 				{ content: "\f015"; }
+.icon-logout > a:before 			{ content: "\f011"; }
+.icon-mark:before 					{ content: "\f046"; }
+.icon-mark-read > a:before			{ content: "\f046"; }
+.icon-mcp > a:before 				{ content: "\f0e3"; }
+.icon-members > a:before 			{ content: "\f0c0"; }
+.icon-newspage > a:before 			{ content: "\f0a1"; }
+.icon-notification > a:before 		{ content: "\f0f3"; }
+.icon-pages > a:before 				{ content: "\f0c5"; }
+.icon-pm > a:before 				{ content: "\f01c"; }
+.icon-print > a:before 				{ content: "\f02f"; }
+.icon-profile > a:before 			{ content: "\f007"; }
+.icon-register > a:before 			{ content: "\f044"; }
+.icon-restore-permissions > a:before { content: "\f079"; }
+.icon-search > a:before 			{ content: "\f002"; }
+.icon-search-advanced > a:before 	{ content: "\f1de"; }
+.icon-search-self > a:before 		{ content: "\f007"; }
+.icon-search-unanswered > a:before 	{ content: "\f1ae"; }
+.icon-search-unread > a:before 		{ content: "\f06e"; }
+.icon-search-new > a:before 		{ content: "\f0e7"; }
+.icon-search-active > a:before 		{ content: "\f0e6"; }
+.icon-sendemail > a:before 			{ content: "\f0e0"; }
+.icon-subscribe > a:before 			{ content: "\f046"; }
+.icon-team > a:before 				{ content: "\f132"; }
+.icon-ucp > a:before 				{ content: "\f013"; }
+.icon-unsubscribe > a:before 		{ content: "\f147"; }
+.icon-view > a:before				{ content: "\f06e"; }
+
+.report-icon:before { content: "\f06a"; color: #F40; }
+.warn-icon:before { content: "\f071"; color: #FFAE00; }
+.edit-icon:before { content: "\f044"; color: #888; }
+.delete-icon:before { content: "\f00d"; color: #F00; }
+.info-icon:before { content: "\f05a"; color: #00B6FF; }
+.quote-icon:before { content: "\f10d"; }
+.post-buttons .responsive-menu-link:before { content: "\f0c9"; color: #888; }
+
+.profile-context a.icon-profile:before	{ content: "\f007"; }
+.profile-context a.icon-search:before 	{ content: "\f002"; }
+.profile-context a.icon-ignore:before 	{ content: "\f05e"; }
+
+.imageset.icon_contact:before 			{ content: "\f0e5"; padding-left: 2px; padding-top: 1px; }
+.imageset.icon_topic_reported:before 	{ content: "\f06a"; color: #FFF; padding-left: 3px; }
+.imageset.icon_topic_unapproved:before 	{ content: "\f059"; color: #FFF; padding-left: 2px; }
+.imageset.icon_topic_deleted:before 	{ content: "\f1b8"; color: #5CFF00; padding-left: 2px; }
+
+.post-icon:after, .newpm-icon:after 	{ content: '\f067'; }
+.reply-icon:after, .pmreply-icon:after 	{ content: '\f112'; }
+.locked-icon:after 						{ content: '\f023'; }
+.forwardpm-icon:after 					{ content: '\f064'; }
+.tools-icon:before 						{ content: '\f0ad'; }
+.sort-icon:before 						{ content: '\f161'; }
+.modtools-icon:before 					{ content: '\f0e3'; }
+.search-icon:after 						{ content: '\f002'; margin: 0 1px; }
+.search-adv-icon:after					{ content: '\f013'; margin: 0 1px; }
