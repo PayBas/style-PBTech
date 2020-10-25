@@ -1,0 +1,609 @@
+
+
+/* Post styling
+--------------------------------------------- */
+.postbody {
+    width: 78%;
+}
+
+.post {
+    margin: 0 1px 4px;
+    box-shadow: inset 0 0 0 1px #000, 0 0 0 1px #000, 0 2px 4px rgba(0, 0, 0, 0.6);
+    border: 2px solid #1B1B1B;
+    border-radius: 0;
+    background: #313131;
+    padding: 3px;
+}
+
+.post > .inner {
+    background: #1B1B1B;
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+.post.bg1 > .inner {
+    background: #313131 linear-gradient(to bottom, rgba(23, 23, 23, 1) 0, rgba(49, 49, 49, 0) 82px) linear-gradient(to top, rgba(26, 26, 26, 1) 0, rgba(49, 49, 49, 0) 46px);
+}
+
+.post.bg2 > .inner {
+    background: #1B1B1B linear-gradient(to bottom, rgba(14, 14, 14, 1) 0, rgba(27, 27, 27, 0) 82px) linear-gradient(to top, rgba(14, 14, 14, 1) 0, rgba(27, 27, 27, 0) 38px);
+}
+
+.post,
+.post > .inner,
+.post.bg1 > .inner,
+.post.bg2 > .inner {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post.reported {
+    background-color: #500C0C;
+}
+
+.post.deleted {
+    /* @TODO */
+}
+
+.post.unread {
+    /* @TODO */
+}
+
+.post.warned {
+    background-color: #50420C;
+}
+
+.post,
+.post.reported,
+.post.warned,
+.post.deleted {
+    background: #D8D8D8;
+    padding: 5px;
+    border-bottom: 1px solid #CAC9C8;
+}
+
+.postbody {
+    color: #CCC;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+    line-height: 18px;
+    width: 76.5%;
+}
+
+.post .postbody .content,
+#cp-main .post .content,
+#cp-main .pm .content {
+    background-image: none;
+    border-color: rgba(200, 200, 200, 0.6);
+}
+
+.topic_poll:before,
+.action-bar.top + .post-container:before {
+    background: #D8D8D8 none repeat scroll 0 0;
+    content: '';
+    display: block;
+    height: 16px;
+}
+
+.has-profile .postbody {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%) no-repeat;
+    background-size: 1px 100%;
+}
+
+.has-profile .postbody {
+    background: none;
+}
+
+.post .postbody .content,
+#cp-main .post .content,
+#cp-main .pm .content {
+    text-align: justify;
+    border-top: solid 1px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.postbody .ignore {
+    padding: 5px 10px;
+}
+
+/* Post profiles
+--------------------------------------------- */
+.postprofile {
+    background: none no-repeat 0 0;
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    min-height: 165px;
+    border: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 23.5%;
+    float: left;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+.postprofile {
+    background: none !important;
+    padding: 0;
+    min-height: inherit;
+    width: 22%;
+}
+
+.postprofile dt {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.postprofile .avatar-container {
+    min-height: 92px;
+    position: relative;
+}
+
+.no-avatar .avatar-container {
+    background: url("./images/no_avatar.gif") 50% 2px no-repeat;
+}
+
+.no-avatar .avatar-container {
+    background: url("./images/no_avatar.gif") 50% 10px no-repeat;
+}
+
+.postprofile .avatar {
+    display: inline-block;
+    float: none;
+    margin: 2px auto 0;
+    padding: 8px 10px 11px 8px;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.postprofile .avatar {
+    background: url("./images/avatar-tr.png") 100% 0 no-repeat, url("./images/avatar-bl.png") 0 100% no-repeat;
+    margin-top: 0px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+.online .postprofile dt strong:before,
+.online .postprofile dt strong:after,
+.online .postprofile dt a:not(.avatar):before,
+.online .postprofile dt a:not(.avatar):after {
+    color: #5CFF00;
+    content: "«";
+    font-size: 1em;
+    font-weight: normal;
+    margin-right: 4px;
+    text-shadow: 0 0 3px #5DF644;
+}
+
+.online .postprofile dt strong:after,
+.online .postprofile dt a:not(.avatar):after {
+    content: "»";
+    margin-left: 4px;
+    margin-right: auto;
+}
+
+.postprofile dt, .postprofile dd {
+    margin-left: 0;
+}
+
+.postprofile dd {
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.postprofile dd:last-child {
+    margin-bottom: 0;
+}
+
+.postprofile strong {
+    color: #DDD;
+}
+
+/* Gaming assets
+--------------------------------------------- */
+.postprofile .icons-frame {
+    display: block;
+    height: 83px;
+    width: 35px;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    -webkit-transform: translateX(-74px);
+    -ms-transform: translateX(-74px);
+    transform: translateX(-74px);
+}
+
+.postprofile .icons-frame div {
+    height: 18px;
+    width: 18px;
+    background-size: 100% 100%;
+    background: #000 no-repeat;
+    border-radius: 3px;
+}
+
+.postprofile .icons-frame > div {
+    position: absolute;
+}
+
+.postprofile .game-icon-a {
+    top: 11px;
+    left: 11px;
+}
+
+.postprofile .game-icon-b {
+    top: 31px;
+    left: 11px;
+}
+
+.postprofile .game-icon-c {
+    top: 51px;
+    left: 11px;
+}
+
+.postprofile .rank-icon {
+    height: 33px;
+    width: 33px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
+}
+
+.postprofile .rank-icon span {
+    font-weight: bold;
+    vertical-align: middle;
+    font-size: 9px;
+}
+
+.postprofile .rank-icon img {
+    margin-top: 1px;
+    vertical-align: middle;
+}
+
+/** end gaming assets **/
+
+.postprofile .avatar img {
+    width: 64px;
+    height: 64px;
+}
+
+.postprofile .avatar:after {
+    display: none !important;
+}
+
+.postprofile .avatar img {
+    border: 1px solid rgba(0,152,245,0.7);
+    border-radius: 4px;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+}
+
+.postprofile .icons-frame {
+    display: none;
+}
+
+.postprofile .rank-icon {
+    background: none;
+    color: #FFF;
+    bottom: 0;
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+    text-shadow: 0 0 2px #000;
+}
+
+/* Polls
+--------------------------------------------- */
+.topic_poll .panel {
+    margin: 0 1px 4px;
+    box-shadow: inset 0 0 0 1px #000, 0 0 0 1px #000, 0 2px 4px rgba(0, 0, 0, 0.6);
+    border: 2px solid #1B1B1B;
+    border-radius: 0;
+    background: #313131;
+    padding: 3px;
+}
+
+.topic_poll .panel {
+    background: #D8D8D8;
+    border-color: #CAC9C8;
+    border-width: 0 0 1px 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topic_poll .content {
+    background: #1B1B1B;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0) 40px), #1B1B1B;
+    border: 1px solid #000;
+    padding: 0 20px;
+    position: relative;
+}
+
+.topic_poll .content {
+    background: none;
+    border: 0;
+}
+
+.topic_poll .polls {
+    background: rgba(19,19,19,0.14);
+    background: -moz-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(19,19,19,0.14)), color-stop(100%, rgba(214,210,214,0.14)));
+    background: -webkit-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
+    background: -o-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
+    background: -ms-linear-gradient(top, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
+    background: linear-gradient(to bottom, rgba(19,19,19,0.14) 0%, rgba(214,210,214,0.14) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#d6d2d6', GradientType=0 );
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 10px 10px 25px 10px;
+}
+
+.topic_poll h2 {
+    color: #00C0FF;
+    font: italic 20px Georgia, "Times New Roman", Times, serif;
+    border-bottom: none !important;
+    padding-top: 0.5em;
+}
+
+.topic_poll h2 {
+    color: #074E79;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.topic_poll h2 span {
+    color: #074E79;
+    font: bold 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 7px 5px 7px 25px;
+}
+
+.topic_poll h2 span.poll-icon-timer {
+    background: url("./images/icons/poll-end.gif") no-repeat 0 50%;
+}
+
+.topic_poll h2 span.poll-icon-timer {
+    background: url("./images/icons/poll-open.png") no-repeat 0 50%;
+    padding-left: 40px;
+}
+
+.topic_poll h2 span.poll-icon-open {
+    background: url("./images/icons/poll-open.gif") no-repeat 0 50%;
+}
+
+.topic_poll h2 span.poll-icon-open {
+    background: url("./images/icons/poll-open.png") no-repeat 0 50%;
+    padding-left: 40px;
+}
+
+.topic_poll h2 span.poll-icon-closed {
+    background: url("./images/icons/poll-private.gif") no-repeat 0 50%;
+}
+
+.topic_poll h2 span.poll-icon-closed {
+    background: url("./images/icons/poll-open.png") no-repeat 0 50%;
+    padding-left: 40px;
+}
+
+
+.topic_poll p.author {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    padding: 8px 14px;
+    box-shadow: 0 0 0 1px #000, 0 0 4px 2px rgba(0, 0, 0, 0.9), inset 0 0 6px 6px rgba(0, 0, 0, 1);
+    background: #0A0A0A;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 6px 6px;
+    border: 1px solid #363636;
+    border-top: none;
+    line-height: 1.5em;
+}
+
+.topic_poll p.author {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.topic_poll p.author strong {
+    color: #FFF;
+}
+
+.topic_poll p.author strong {
+    color: #000;
+}
+
+.topic_poll .polls {
+    position: relative;
+    box-shadow: 0 0 0 1px #000, 0 0 4px 2px rgba(0, 0, 0, 0.9), inset 0 0 0 1px #111, inset 0 0 6px 6px rgba(0, 0, 0, 1);
+    background: #0A0A0A;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    border: 1px solid #363636;
+    margin: 10px 10px 36px;
+    padding: 15px;
+}
+
+/*.topic_poll .polls .inner {
+	margin: 1px 2px;
+	border: 1px solid #1a1a1a;
+}*/
+
+fieldset.polls dl {
+    border: none;
+    color: #CCC;
+    line-height: 16px;
+}
+
+fieldset.polls dl {
+    color: inherit;
+}
+
+
+fieldset.polls dt, fieldset.polls dd {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+fieldset.polls dt {
+    text-align: right;
+}
+
+fieldset.polls dd {
+    text-shadow: 0 0 2px #000;
+}
+
+fieldset.polls dd {
+    text-shadow: none;
+}
+
+fieldset.polls dd.resultbar div {
+    border: none;
+    position: relative;
+}
+
+fieldset.polls dd.resultbar div {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #0081b4;
+    color: #FFF;
+}
+
+fieldset.polls dd.resultbar div:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+}
+
+fieldset.polls dd.resultbar div:before {
+    background-image: none;
+}
+
+fieldset.polls dl.most-votes dd.resultbar div {
+    background-position: 100% -1px;
+}
+
+fieldset.polls dl.most-votes dd.resultbar div {
+    background: #009ee2;
+    box-shadow: 0 0 5px rgba(88, 186, 255, 0.7);
+}
+
+fieldset.polls dl.most-votes dd.resultbar div:before {
+    background-position: 0 -1px;
+}
+
+fieldset.polls dl.voted {
+    color: #FFF;
+}
+
+fieldset.polls dl.voted {
+    color: #000;
+    font-weight: bold;
+}
+
+.poll_total_votes {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topic_poll .poll-footer {
+    height: 74px;
+    margin: 10px 0 -51px;
+    padding: 13px 0 13px 2px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.topic_poll .poll-footer {
+    background: none;
+    margin: 15px 0 0;
+    padding: 0;
+    overflow: inherit;
+    height: auto;
+}
+
+.topic_poll .poll-footer .button1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px !important;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 1px;
+    padding: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topic_poll .poll-footer .button1 {
+    height: auto;
+    line-height: 1.7em;
+    padding: 2px 6px;
+    width: auto !important;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.vote-submitted {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+}
+
+.vote-submitted {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    display: none;
+}
+
+/* Sort & Display options
+@ TODO: this is temporary
+--------------------------------------------- */
+.dropdown fieldset.display-options {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown fieldset.display-options label {
+    display: block;
+    margin: 4px;
+    padding: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.dropdown fieldset.display-options select {
+    min-width: 120px;
+}
+

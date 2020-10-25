@@ -1,0 +1,241 @@
+/* Responsive Design
+---------------------------------------- */
+
+#wrap {
+    min-width: 300px;
+    padding: 0;
+}
+
+.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.headerbar {
+	min-height: 150px;
+}
+
+#page-body {
+	background: url("./images/border-bot.gif") repeat-x 0 100%,
+				url("./images/border-top.gif") repeat-x 0 0,
+				rgba(0,0,0,0.8);
+	margin: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+}
+
+/* Topic lists */
+ul.topiclist.forums dt, ul.topiclist.topics dt {
+    margin-right: -250px;
+}
+ul.topiclist.forums dt .list-inner, ul.topiclist.topics dt .list-inner {
+    margin-right: 250px;
+}
+
+ul.topiclist.forums dd.lastpost, ul.topiclist.topics dd.lastpost {
+    display: block;
+}
+
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+    ul.topiclist.forums dt, ul.topiclist.topics dt {
+        margin-right: 0;
+    }
+
+    ul.topiclist.forums dt .list-inner, ul.topiclist.topics dt .list-inner {
+        margin-right: 0;
+    }
+
+    ul.topiclist.forums dd.lastpost, ul.topiclist.topics dd.lastpost {
+        display: none;
+    }
+}
+
+/* Nav-bar */
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+	#page-header .navbar {
+		border-radius: 0;
+		width: 100%;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#page-header .navbar > .inner {
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width: 430px), only screen and (max-device-width: 430px) {
+    .section-viewtopic .search-box .inputbox {
+        width: 100px;
+    }
+}
+
+#body-header:before,
+#body-header:after {
+	display: none;
+}
+
+#body-header ul.navlinks {
+	padding: 0 10px;
+}
+
+.breadcrumbs .crumb-topic {
+	display: none;
+}
+
+.responsive-search a {
+	padding: 0 4px !important;
+	height: auto;
+	width: auto;
+	overflow: inherit;
+	text-indent: inherit;
+}
+
+/* Index */
+.index-left {
+	margin-right: 0;
+	float: none;
+	overflow: inherit;
+}
+
+.index-right {
+	width: auto;
+	float: none;
+}
+
+.misc-block.advertisement {
+	display: none;
+}
+
+/* Posts & Post profiles */
+.post .postprofile {
+	overflow: inherit;
+	padding-bottom: 0;
+	min-height: inherit;
+}
+
+.postprofile {
+	background: none !important;
+	text-align: left;
+}
+
+.postprofile .icons-frame,
+.postprofile .rank-icon {
+	display: none;
+}
+
+.postprofile .avatar-container {
+	background: none !important;
+	margin: 0;
+	min-height: inherit;
+	padding: 0;
+}
+
+.postprofile .avatar {
+	background: none;
+	display: block;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+
+.postprofile .avatar:after {
+	display: none !important;
+}
+
+.profile-context .dropdown {
+	left: 0;
+	top: 50px;
+}
+
+.postbody {
+	position: static;
+}
+
+.post .postbody .content,
+#cp-main .post .content,
+#cp-main .pm .content {
+	text-align: inherit;
+}
+
+.notouch.section-viewtopic .post-buttons {
+	opacity: 1;
+}
+
+.has-profile .post-buttons {
+	right: 5px;
+	top: 5px;
+}
+
+.post-container .post > .inner,
+.post.pm > .inner {
+	position: inherit; /* TODO necessary? */
+}
+
+/* Polls */
+.topic_poll .content {
+	padding: 0 10px;
+}
+
+.topic_poll .polls {
+	margin-left: 0;
+	margin-right: 0;
+}
+fieldset.polls dt {
+	text-align: left;
+}
+fieldset.polls dd.resultbar,
+fieldset.polls dd.poll_option_percent {
+	margin-top: 0;
+}
+fieldset.polls dd.resultbar {
+	width: 85%;
+}
+fieldset.polls dd.poll_option_percent {
+	width: 15%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+	.topic_poll p.author {
+		display: none;
+	}
+}
+
+/* Misc */
+#top-bar {
+	background-position: 0 100%;
+}
+
+body.topbar-fixed #top-bar {
+	width: auto;
+	position: relative;
+	top: auto;
+}
+
+body.topbar-fixed #wrap {
+	margin-top: auto;
+}
+
+#video-background {
+	display: none !important;
+}
+
+#qr_postform .panel {
+	padding: 15px 5px 25px;
+}
+@media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+	#qr_postform #message-box {
+		padding: 10px 10px 16px;
+	}
+}
+
+#cp-main .forabg,
+#cp-main .forumdb,
+#cp-main .post,
+#cp-main .panel {
+	border-radius: 0;
+}
